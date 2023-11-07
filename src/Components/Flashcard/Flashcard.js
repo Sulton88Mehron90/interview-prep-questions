@@ -19,7 +19,7 @@ export default function Flashcard({ flashcard }) {
     setMaxHeight();
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);
-  }, [flashcard]);
+  }, [flashcard.question, flashcard.answer]); // Recalculate height if the question or answer changes
 
   return (
     <div

@@ -1,4 +1,3 @@
-// FlashcardContainer.js
 import React from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
@@ -11,7 +10,6 @@ export default function FlashcardContainer({ flashcards }) {
     <div className='container' role="main">
       <div className='card-grid' aria-live="polite">
         {flashcards.map((flashcard, index) => (
-          // Use the unique id for key if available, otherwise use index
           <Flashcard flashcard={flashcard} key={flashcard.id || index} />
         ))}
         <Link to="/" className="button go-back-button" aria-label="Return to home">Exit</Link>
