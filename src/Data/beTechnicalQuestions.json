@@ -1,0 +1,15 @@
+[
+    {
+      "question": "What is the difference between Array#map and Array#each?",
+      "answer": "Array#map transforms each element and returns a new array with the changes, while Array#each only iterates over the elements without creating a new array."
+    },
+    {
+      "question": "Name 4 ruby enumerables excluding each and map and give a brief example of what’s unique about each.",
+      "answer": "select (filters based on a condition), reject (inverse of select), inject (reduces elements to a single value), find (returns the first element that meets a condition)."
+    },
+    {
+      "question": "In as much detail as possible, describe the request-response cycle.",
+      "answer": "The request-response cycle begins with the client sending a request to the server. The server processes the request, potentially interacts with a database, and then sends a response back to the client."
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+/* Remove all styles related to .flashcard-options and .flashcard-option */
+
+.card .front,
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: transform 300ms;
+}
+
+.card .front {
+  background-color: #fff;
+}
+
+.card .back {
+  background-color: #f8f8f8;
+  transform: rotateY(180deg);
+}
+
+/* Continue with the rest of your CSS */

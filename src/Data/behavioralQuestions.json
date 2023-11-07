@@ -1,0 +1,19 @@
+[
+    {
+      "question": "What made you switch from your prior career into programming?",
+      "answer": "I was drawn to programming because of its potential for creativity, problem-solving, and the continuous learning environment it offers."
+    },
+    {
+      "question": "How do you familiarize yourself with a codebase you haven’t worked in before?",
+      "answer": "I start by reading the documentation, understanding the architecture, and then progressively delving into the code while making small changes to see the effects."
+    },
+    {
+      "question": "Describe to me the steps you would take to build out a product.",
+      "answer": "I would begin with market research, define the MVP, design the architecture, develop iteratively with continuous testing, and then deploy and monitor the product."
+    },
+    {
+      "question": "Tell me how you solve a problem.",
+      "answer": "I approach problems systematically: defining the problem, breaking it down into smaller parts, researching, prototyping potential solutions, and then testing and iterating."
+    }
+  ]
+  
