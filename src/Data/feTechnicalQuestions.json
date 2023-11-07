@@ -1,17 +1,21 @@
 [
   {
+    "id": 1,
     "question": "What are some core principles of functional programming?",
     "answer": "Core principles include immutability, pure functions, first-class and higher-order functions, statelessness, and using expressions over statements."
   },
   {
+    "id": 2,
     "question": "What makes a function pure?",
     "answer": "A function is pure if it always returns the same result given the same arguments and has no side effects."
   },
   {
+    "id": 3,
     "question": "What is immutability?",
     "answer": "Immutability refers to the concept that once data is created, it cannot be changed. Any 'modifications' create new copies of the data."
   },
   {
+    "id": 4,
     "question": "What is a higher order function?",
     "answer": "A higher-order function is one that takes other functions as arguments or returns a function as its result."
   }

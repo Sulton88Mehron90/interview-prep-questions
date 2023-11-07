@@ -1,25 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import '../Flashcard/Flashcard.css';
+import './Flashcard.css'; // Ensure this path is correct
 
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false);
   const [height, setHeight] = useState('initial');
 
-  const frontEl = useRef();
-  const backEl = useRef();
+  const frontEl = useRef(null);
+  const backEl = useRef(null);
 
-  function setMaxHeight() {
+  const setMaxHeight = () => {
     const frontHeight = frontEl.current.getBoundingClientRect().height;
     const backHeight = backEl.current.getBoundingClientRect().height;
     setHeight(Math.max(frontHeight, backHeight, 100));
-  }
+  };
 
-  useEffect(setMaxHeight, [flashcard.question, flashcard.answer]);
   useEffect(() => {
+    setMaxHeight();
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);
-  }, []);
+  }, [flashcard]);
 
   return (
     <div
@@ -27,11 +27,13 @@ export default function Flashcard({ flashcard }) {
       style={{ height: height }}
       onClick={() => setFlip(!flip)}
     >
-      <div className="front" ref={frontEl}>
-        {flashcard.question}
-      </div>
-      <div className="back" ref={backEl}>
-        {flashcard.answer}
+      <div className="card-inner">
+        <div className="front" ref={frontEl}>
+          {flashcard.question}
+        </div>
+        <div className="back" ref={backEl}>
+          {flashcard.answer}
+        </div>
       </div>
     </div>
   );
@@ -40,6 +42,6 @@ export default function Flashcard({ flashcard }) {
 Flashcard.propTypes = {
   flashcard: PropTypes.shape({
     question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired
-  }).isRequired
+    answer: PropTypes.string.isRequired,
+  }).isRequired,
 };
