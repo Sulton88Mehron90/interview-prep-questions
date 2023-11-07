@@ -68,7 +68,6 @@ export default function FlashcardContainer({ flashcards }) {
   );
 }
 
-
 FlashcardContainer.propTypes = {
   flashcards: PropTypes.arrayOf(
     PropTypes.shape({

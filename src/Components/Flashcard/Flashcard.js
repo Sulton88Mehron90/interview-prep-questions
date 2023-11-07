@@ -5,21 +5,21 @@ import './Flashcard.css';
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false);
   const [height, setHeight] = useState('initial');
+  
+  const frontEl = useRef();
+  const backEl = useRef();
 
-  const frontEl = useRef(null);
-  const backEl = useRef(null);
-
-  const setMaxHeight = () => {
-    const frontHeight = frontEl.current.getBoundingClientRect().height;
-    const backHeight = backEl.current.getBoundingClientRect().height;
-    setHeight(Math.max(frontHeight, backHeight, 100));
-  };
+  function setMaxHeight() {
+    const frontHeight = frontEl.current ? frontEl.current.getBoundingClientRect().height : 0;
+    const backHeight = backEl.current ? backEl.current.getBoundingClientRect().height : 0;
+    setHeight(Math.max(frontHeight, backHeight, 100)); 
+  }
 
   useEffect(() => {
     setMaxHeight();
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);
-  }, [flashcard.question, flashcard.answer]);
+  }, [flashcard.question, flashcard.answer, flip]);
 
   return (
     <div
@@ -28,10 +28,10 @@ export default function Flashcard({ flashcard }) {
       onClick={() => setFlip(!flip)}
     >
       <div className="card-inner">
-        <div className="front" ref={frontEl}>
+        <div className="front card-content" ref={frontEl}>
           {flashcard.question}
         </div>
-        <div className="back" ref={backEl}>
+        <div className="back card-content" ref={backEl}>
           {flashcard.answer}
         </div>
       </div>
