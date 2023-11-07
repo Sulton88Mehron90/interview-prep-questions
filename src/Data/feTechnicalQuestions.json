@@ -2,456 +2,547 @@
   {
     "id": 1,
     "question": "What are some core principles of functional programming?",
-    "answer": "Core principles include immutability, pure functions, first-class and higher-order functions, statelessness, and using expressions over statements."
+    "answer": "Core principles include immutability, pure functions, first-class and higher-order functions, statelessness, and using expressions over statements.",
+    "category": "fe"
   },
   {
     "id": 2,
     "question": "What makes a function pure?",
-    "answer": "A function is pure if it always returns the same result given the same arguments and has no side effects."
+    "answer": "A function is pure if it always returns the same result given the same arguments and has no side effects.",
+    "category": "fe"
   },
   {
     "id": 3,
     "question": "What is immutability?",
-    "answer": "Immutability refers to the concept that once data is created, it cannot be changed. Any 'modifications' create new copies of the data."
+    "answer": "Immutability refers to the concept that once data is created, it cannot be changed. Any 'modifications' create new copies of the data.",
+    "category": "fe"
   },
   {
     "id": 4,
     "question": "What is a higher order function?",
-    "answer": "A higher-order function is one that takes other functions as arguments or returns a function as its result."
+    "answer": "A higher-order function is one that takes other functions as arguments or returns a function as its result.",
+    "category": "fe"
   },
   {
     "id": 5,
     "question": "What is the purpose of a return statement in a function?",
-    "answer": "A return statement is used to exit a function and hand back a value to the point where the function was called."
+    "answer": "A return statement is used to exit a function and hand back a value to the point where the function was called.",
+    "category": "fe"
   },
   {
     "id": 6,
     "question": "What is function composition?",
-    "answer": "Function composition is the process of combining two or more functions to produce a new function. Composing functions together is like snapping together a series of pipes for data to flow through."
+    "answer": "Function composition is the process of combining two or more functions to produce a new function. Composing functions together is like snapping together a series of pipes for data to flow through.",
+    "category": "fe"
   },
   {
     "id": 7,
     "question": "What is currying?",
-    "answer": "Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument."
+    "answer": "Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument.",
+    "category": "fe"
   },
   {
     "id": 8,
     "question": "What are some benefits of functional programming?",
-    "answer": "Functional programming can lead to code that's easier to test and maintain, has fewer bugs, and is more scalable due to its declarative nature and avoidance of side effects."
+    "answer": "Functional programming can lead to code that's easier to test and maintain, has fewer bugs, and is more scalable due to its declarative nature and avoidance of side effects.",
+    "category": "fe"
   },
   {
     "id": 9,
     "question": "What is a closure, and how/why would you use one?",
-    "answer": "A closure is a function that has access to its outer function scope even after the outer function has returned. This allows the function to remember and access variables from its lexical scope."
+    "answer": "A closure is a function that has access to its outer function scope even after the outer function has returned. This allows the function to remember and access variables from its lexical scope.",
+    "category": "fe"
   },
   {
     "id": 10,
     "question": "What is memoization and how can it improve the performance of a function?",
-    "answer": "Memoization is an optimization technique that involves storing the results of expensive function calls and returning the cached result when the same inputs occur again."
+    "answer": "Memoization is an optimization technique that involves storing the results of expensive function calls and returning the cached result when the same inputs occur again.",
+    "category": "fe"
   },
   {
     "id": 11,
     "question": "Explain the concept of hoisting.",
-    "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code execution. Essentially, it means that you can use functions and variables before they are declared in the code."
+    "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code execution. Essentially, it means that you can use functions and variables before they are declared in the code.",
+    "category": "fe"
   },
   {
     "id": 12,
     "question": "What is the ‘this’ keyword in JavaScript?",
-    "answer": "In JavaScript, the ‘this’ keyword refers to the object it belongs to. It has different values depending on where it is used: in a method, alone, in a function, in a function in strict mode, in an event, or with a constructor."
+    "answer": "In JavaScript, the ‘this’ keyword refers to the object it belongs to. It has different values depending on where it is used: in a method, alone, in a function, in a function in strict mode, in an event, or with a constructor.",
+    "category": "fe"
   },
   {
     "id": 13,
     "question": "Explain the concept of event delegation.",
-    "answer": "Event delegation is a technique in which a single event listener is attached to a parent element rather than individual child elements. The listener will catch bubbled events from its children due to event propagation."
+    "answer": "Event delegation is a technique in which a single event listener is attached to a parent element rather than individual child elements. The listener will catch bubbled events from its children due to event propagation.",
+    "category": "fe"
   },
   {
     "id": 14,
     "question": "What is a promise and why is it helpful?",
-    "answer": "A promise is an object representing the eventual completion or failure of an asynchronous operation. It is helpful for writing cleaner asynchronous code, avoiding callback hell, and handling asynchronous operations sequentially."
+    "answer": "A promise is an object representing the eventual completion or failure of an asynchronous operation. It is helpful for writing cleaner asynchronous code, avoiding callback hell, and handling asynchronous operations sequentially.",
+    "category": "fe"
   },
   {
     "id": 15,
     "question": "What is block scope and how is it different from global and local scope?",
-    "answer": "Block scope is the area within conditional blocks, loops, etc, where variables can be accessed only within that block. It differs from global scope (variables accessible everywhere) and local scope (variables accessible within the function they are defined)."
+    "answer": "Block scope is the area within conditional blocks, loops, etc, where variables can be accessed only within that block. It differs from global scope (variables accessible everywhere) and local scope (variables accessible within the function they are defined).",
+    "category": "fe"
   },
   {
     "id": 16,
     "question": "Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?",
-    "answer": "Altering the global scope can lead to conflicts with other scripts and libraries, increase the chance of code collision and bugs, and make debugging difficult."
+    "answer": "Altering the global scope can lead to conflicts with other scripts and libraries, increase the chance of code collision and bugs, and make debugging difficult.",
+    "category": "fe"
   },
   {
     "id": 17,
     "question": "What’s the difference between undefined and null.",
-    "answer": "Undefined indicates that a variable has been declared but has not yet been assigned a value. Null is an assignment value that can be assigned to a variable as a representation of no value."
+    "answer": "Undefined indicates that a variable has been declared but has not yet been assigned a value. Null is an assignment value that can be assigned to a variable as a representation of no value.",
+    "category": "fe"
   },
   {
     "id": 18,
     "question": "What’s the difference between let and const?",
-    "answer": "Both let and const are used to declare variables in block scope, but let allows reassigning the variable's value while const does not allow the variable's value to be reassigned."
+    "answer": "Both let and const are used to declare variables in block scope, but let allows reassigning the variable's value while const does not allow the variable's value to be reassigned.",
+    "category": "fe"
   },
   {
     "id": 19,
     "question": "What is the event loop?",
-    "answer": "The event loop is a process that manages execution of code, gathering events, and processing messages in a queue when JavaScript has finished executing other code."
+    "answer": "The event loop is a process that manages execution of code, gathering events, and processing messages in a queue when JavaScript has finished executing other code.",
+    "category": "fe"
   },
   {
     "id": 20,
     "question": "What does event bubbling or event propagation mean?",
-    "answer": "Event bubbling is the concept where an event starts at the most specific element and then flows upwards to the least specific one (the document object). It allows for event handling to be managed at a higher-level element rather than on each individual element."
+    "answer": "Event bubbling is the concept where an event starts at the most specific element and then flows upwards to the least specific one (the document object). It allows for event handling to be managed at a higher-level element rather than on each individual element.",
+    "category": "fe"
   },
   {
     "id": 21,
     "question": "What is \"use strict\";? What are the advantages and disadvantages to using it?",
-    "answer": "\"use strict\" is a directive that enables strict mode, which is a way to opt into a restricted variant of JavaScript. Advantages include catching errors early, preventing certain unsafe actions, and it can potentially improve performance. Disadvantages could be that some libraries might not be designed to run in strict mode and might cause issues."
+    "answer": "\"use strict\" is a directive that enables strict mode, which is a way to opt into a restricted variant of JavaScript. Advantages include catching errors early, preventing certain unsafe actions, and it can potentially improve performance. Disadvantages could be that some libraries might not be designed to run in strict mode and might cause issues.",
+    "category": "fe"
   },
   {
     "id": 22,
     "question": "How is an array different from an object?",
-    "answer": "An array is a special type of object used for storing ordered collections of items, accessed by index, whereas a general object is a collection of key-value pairs used to store unordered data and accessed by keys."
+    "answer": "An array is a special type of object used for storing ordered collections of items, accessed by index, whereas a general object is a collection of key-value pairs used to store unordered data and accessed by keys.",
+    "category": "fe"
   },
   {
     "id": 23,
     "question": "What function would you use to search an array and return a value?",
-    "answer": "You could use the `find()` function to return the first element in the array that satisfies a provided testing function."
+    "answer": "You could use the `find()` function to return the first element in the array that satisfies a provided testing function.",
+    "category": "fe"
   },
   {
     "id": 24,
     "question": "How would you find all the values for a specific key in an array of objects?",
-    "answer": "You can use the `map()` function to create a new array with the values of the key from each object in the array."
+    "answer": "You can use the `map()` function to create a new array with the values of the key from each object in the array.",
+    "category": "fe"
   },
   {
     "id": 25,
     "question": "How do you interact with APIs on the front end?",
-    "answer": "You interact with APIs on the front end using HTTP requests with methods like GET, POST, PUT, DELETE, etc., typically through the Fetch API or libraries like Axios."
+    "answer": "You interact with APIs on the front end using HTTP requests with methods like GET, POST, PUT, DELETE, etc., typically through the Fetch API or libraries like Axios.",
+    "category": "fe"
   },
   {
     "id": 26,
     "question": "What is chaining in javascript?",
-    "answer": "Chaining is a pattern where you link multiple methods together in a single line of code, with each method acting on the return value of the preceding one."
+    "answer": "Chaining is a pattern where you link multiple methods together in a single line of code, with each method acting on the return value of the preceding one.",
+    "category": "fe"
   },
   {
     "id": 27,
     "question": "How do you stay up-to-date on JS and React news/improvements?",
-    "answer": "You can stay up-to-date by following blogs, newsletters, attending conferences and meetups, participating in online communities, and using social media platforms to follow industry leaders and developers."
+    "answer": "You can stay up-to-date by following blogs, newsletters, attending conferences and meetups, participating in online communities, and using social media platforms to follow industry leaders and developers.",
+    "category": "fe"
   },
   {
     "id": 28,
     "question": "Name three strategies for fixing cross-browser inconsistencies",
-    "answer": "Use CSS reset stylesheets, write feature-detection code using libraries like Modernizr, and test your application across different browsers using tools like BrowserStack."
+    "answer": "Use CSS reset stylesheets, write feature-detection code using libraries like Modernizr, and test your application across different browsers using tools like BrowserStack.",
+    "category": "fe"
   },
   {
     "id": 29,
     "question": "What are some tools and strategies you use to prevent shipping unstable code to production?",
-    "answer": "Tools like linters, automated tests, continuous integration pipelines, pre-commit hooks, and peer code reviews help prevent shipping unstable code to production."
+    "answer": "Tools like linters, automated tests, continuous integration pipelines, pre-commit hooks, and peer code reviews help prevent shipping unstable code to production.",
+    "category": "fe"
   },
   {
     "id": 30,
     "question": "What factors influence whether you’ll take a progressive enhancement vs. graceful degradation approach to building an application?",
-    "answer": "Factors include the baseline level of user experience, browser capabilities, accessibility requirements, and performance goals."
+    "answer": "Factors include the baseline level of user experience, browser capabilities, accessibility requirements, and performance goals.",
+    "category": "fe"
   },
   {
     "id": 31,
     "question": "Define the term ‘MVC’ and explain how an application is architected when following MVC patterns.",
-    "answer": "MVC stands for Model-View-Controller, a design pattern that separates an application into three main logical components, each with distinct responsibilities. The Model is for data and business logic, the View for user interface, and the Controller for handling input and updating the Model."
+    "answer": "MVC stands for Model-View-Controller, a design pattern that separates an application into three main logical components, each with distinct responsibilities. The Model is for data and business logic, the View for user interface, and the Controller for handling input and updating the Model.",
+    "category": "fe"
   },
   {
     "id": 32,
     "question": "What does CORS stand for and what issue does it address?",
-    "answer": "CORS stands for Cross-Origin Resource Sharing. It addresses web security issues by allowing restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served."
+    "answer": "CORS stands for Cross-Origin Resource Sharing. It addresses web security issues by allowing restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.",
+    "category": "fe"
   },
   {
     "id": 33,
     "question": "In as much detail as possible, describe the request-response cycle.",
-    "answer": "The request-response cycle is the process by which a client sends a request to the server and waits for a response. The server processes the request, executes business logic, interacts with databases, and then sends a response back to the client."
+    "answer": "The request-response cycle is the process by which a client sends a request to the server and waits for a response. The server processes the request, executes business logic, interacts with databases, and then sends a response back to the client.",
+    "category": "fe"
   },
   {
     "id": 34,
     "question": "What are some popular NodeJS Modules?",
-    "answer": "Some popular Node.js modules are Express.js for building web applications, Mongoose for interacting with MongoDB, and async for asynchronous control flow."
+    "answer": "Some popular Node.js modules are Express.js for building web applications, Mongoose for interacting with MongoDB, and async for asynchronous control flow.",
+    "category": "fe"
   },
   {
     "id": 35,
     "question": "What does npm eject do?",
-    "answer": "The `npm eject` command removes the single build dependency from your project, giving you full control over all configuration files and transitive dependencies (webpack, Babel, ESLint, etc)."
+    "answer": "The `npm eject` command removes the single build dependency from your project, giving you full control over all configuration files and transitive dependencies (webpack, Babel, ESLint, etc).",
+    "category": "fe"
   },
   {
     "id": 36,
     "question": "What does npm build do?",
-    "answer": "`npm build` runs the build script defined in `package.json` and is typically used to compile the project, transpile code, and prepare it for deployment."
+    "answer": "`npm build` runs the build script defined in `package.json` and is typically used to compile the project, transpile code, and prepare it for deployment.",
+    "category": "fe"
   },
   {
     "id": 37,
     "question": "What can you tell me about RESTful APIs?",
-    "answer": "RESTful APIs are designed around REST principles, which use HTTP requests to access and manipulate resources. They are stateless and separate the concerns of client and server."
+    "answer": "RESTful APIs are designed around REST principles, which use HTTP requests to access and manipulate resources. They are stateless and separate the concerns of client and server.",
+    "category": "fe"
   },
   {
     "id": 38,
     "question": "Do you know what a bearer token is in terms of JWT?",
-    "answer": "A bearer token is a type of authorization token used in the header of HTTP requests. In terms of JWT, it represents an encoded JSON object that securely transmits information between parties."
+    "answer": "A bearer token is a type of authorization token used in the header of HTTP requests. In terms of JWT, it represents an encoded JSON object that securely transmits information between parties.",
+    "category": "fe"
   },
   {
     "id": 39,
     "question": "How does JSON work?",
-    "answer": "JSON, or JavaScript Object Notation, is a text-based data format following JavaScript object syntax, which is used for transmitting data in web applications. It is easy for humans to read and write, and easy for machines to parse and generate."
+    "answer": "JSON, or JavaScript Object Notation, is a text-based data format following JavaScript object syntax, which is used for transmitting data in web applications. It is easy for humans to read and write, and easy for machines to parse and generate.",
+    "category": "fe"
   },
   {
     "id": 40,
     "question": "What are libraries you have used?",
-    "answer": "Commonly used JavaScript libraries include jQuery for DOM manipulation, Lodash for utility functions, Axios for HTTP requests, and Moment.js for date manipulation."
+    "answer": "Commonly used JavaScript libraries include jQuery for DOM manipulation, Lodash for utility functions, Axios for HTTP requests, and Moment.js for date manipulation.",
+    "category": "fe"
   },
   {
     "id": 41,
     "question": "What are frameworks you have used?",
-    "answer": "Popular JavaScript frameworks include React.js for building user interfaces, Angular for full-fledged SPA solutions, and Vue.js for its progressive framework capabilities."
+    "answer": "Popular JavaScript frameworks include React.js for building user interfaces, Angular for full-fledged SPA solutions, and Vue.js for its progressive framework capabilities.",
+    "category": "fe"
   },
   {
     "id": 42,
     "question": "What is CORS?",
-    "answer": "CORS, or Cross-Origin Resource Sharing, is a security feature that allows or restricts resources to be requested from another domain outside the domain from which the first resource was served."
+    "answer": "CORS, or Cross-Origin Resource Sharing, is a security feature that allows or restricts resources to be requested from another domain outside the domain from which the first resource was served.",
+    "category": "fe"
   },
   {
     "id": 43,
     "question": "What’s the difference between ES5 and ES6?",
-    "answer": "ES6 (ECMAScript 2015) introduced new syntax and features to JavaScript such as classes, modules, template strings, arrow functions, and promises, unlike ES5 which lacks these features."
+    "answer": "ES6 (ECMAScript 2015) introduced new syntax and features to JavaScript such as classes, modules, template strings, arrow functions, and promises, unlike ES5 which lacks these features.",
+    "category": "fe"
   },
   {
     "id": 44,
     "question": "What’s the difference between an HTTP request and response?",
-    "answer": "An HTTP request is made by a client to request access to resources like HTML pages, and a response is the data sent back by the server to the client."
+    "answer": "An HTTP request is made by a client to request access to resources like HTML pages, and a response is the data sent back by the server to the client.",
+    "category": "fe"
   },
   {
     "id": 45,
     "question": "What does a 200 status code mean?",
-    "answer": "A 200 status code indicates that the HTTP request was successful."
+    "answer": "A 200 status code indicates that the HTTP request was successful.",
+    "category": "fe"
   },
   {
     "id": 46,
     "question": "What does a 400 status code mean?",
-    "answer": "A 400 status code indicates a bad request; the server cannot or will not process the request due to something that is perceived to be a client error."
+    "answer": "A 400 status code indicates a bad request; the server cannot or will not process the request due to something that is perceived to be a client error.",
+    "category": "fe"
   },
   {
     "id": 47,
     "question": "Why use cookies?",
-    "answer": "Cookies are used to store small pieces of data on the client's computer for session management, personalization, and tracking user behavior."
+    "answer": "Cookies are used to store small pieces of data on the client's computer for session management, personalization, and tracking user behavior.",
+    "category": "fe"
   },
   {
     "id": 48,
     "question": "Have you used local storage?",
-    "answer": "Local storage is a way to store data on the client's browser. It is part of the Web Storage API and provides a way to persist data across browser sessions."
+    "answer": "Local storage is a way to store data on the client's browser. It is part of the Web Storage API and provides a way to persist data across browser sessions.",
+    "category": "fe"
   },
   {
     "id": 49,
     "question": "Explain how a GET request works.",
-    "answer": "A GET request is used to retrieve data from a server at the specified resource. When you make a GET request, you're asking the server to send back the data identified by the URL."
+    "answer": "A GET request is used to retrieve data from a server at the specified resource. When you make a GET request, you're asking the server to send back the data identified by the URL.",
+    "category": "fe"
   },
   {
     "id": 50,
     "question": "What is the DOM? How is the virtual dom different?",
-    "answer": "The DOM (Document Object Model) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The virtual DOM is a concept used in libraries such as React to improve performance; it's a lightweight copy of the real DOM used to batch changes and update the real DOM efficiently."
+    "answer": "The DOM (Document Object Model) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The virtual DOM is a concept used in libraries such as React to improve performance; it's a lightweight copy of the real DOM used to batch changes and update the real DOM efficiently.",
+    "category": "fe"
   },
   {
     "id": 51,
     "question": "What advantages does React offer? What about disadvantages?",
-    "answer": "Advantages of React include a virtual DOM for efficient updates, reusable components, and a strong community. Disadvantages may include the learning curve for beginners and being only the view layer, not a full-fledged framework."
+    "answer": "Advantages of React include a virtual DOM for efficient updates, reusable components, and a strong community. Disadvantages may include the learning curve for beginners and being only the view layer, not a full-fledged framework.",
+    "category": "fe"
   },
   {
     "id": 52,
     "question": "What is the concept of state in React?",
-    "answer": "In React, state refers to an object that determines the behavior of a component and how it will render. It is mutable and creates dynamic and interactive components."
+    "answer": "In React, state refers to an object that determines the behavior of a component and how it will render. It is mutable and creates dynamic and interactive components.",
+    "category": "fe"
   },
   {
     "id": 53,
     "question": "What is the concept of state in React?",
-    "answer": "State in React is an object that holds some information that may change over the lifetime of the component. It influences the component's behavior and its rendering output. When state changes, React updates the component's representation in the DOM."
+    "answer": "State in React is an object that holds some information that may change over the lifetime of the component. It influences the component's behavior and its rendering output. When state changes, React updates the component's representation in the DOM.",
+    "category": "fe"
   },
   {
     "id": 54,
     "question": "What is the virtual DOM in React?",
-    "answer": "The virtual DOM is a lightweight copy of the real DOM in memory. React uses it to optimize DOM manipulation by batching changes and updating the real DOM efficiently, minimizing expensive operations."
+    "answer": "The virtual DOM is a lightweight copy of the real DOM in memory. React uses it to optimize DOM manipulation by batching changes and updating the real DOM efficiently, minimizing expensive operations.",
+    "category": "fe"
   },
   {
     "id": 55,
     "question": "What is a React component?",
-    "answer": "A React component is a reusable piece of UI, a JavaScript class or function that returns HTML via the JSX syntax. Components can have their own state and props."
+    "answer": "A React component is a reusable piece of UI, a JavaScript class or function that returns HTML via the JSX syntax. Components can have their own state and props.",
+    "category": "fe"
   },
   {
     "id": 56,
     "question": "What problems does Redux solve?",
-    "answer": "Redux provides a predictable state container for JavaScript apps, solving issues like state management in large applications, maintaining consistency across various parts of the app, and debugging state changes."
+    "answer": "Redux provides a predictable state container for JavaScript apps, solving issues like state management in large applications, maintaining consistency across various parts of the app, and debugging state changes.",
+    "category": "fe"
   },
   {
     "id": 57,
     "question": "What is JSX?",
-    "answer": "JSX is a syntax extension for JavaScript, used in React to describe what the UI should look like. It allows you to write HTML-like syntax in your JavaScript code."
+    "answer": "JSX is a syntax extension for JavaScript, used in React to describe what the UI should look like. It allows you to write HTML-like syntax in your JavaScript code.",
+    "category": "fe"
   },
   {
     "id": 58,
     "question": "How is JSX different from HTML?",
-    "answer": "JSX is similar in appearance to HTML but can include JavaScript logic inside {}. Unlike HTML, JSX is case-sensitive, has self-closing tags, and must return a single parent element."
+    "answer": "JSX is similar in appearance to HTML but can include JavaScript logic inside {}. Unlike HTML, JSX is case-sensitive, has self-closing tags, and must return a single parent element.",
+    "category": "fe"
   },
   {
     "id": 59,
     "question": "How are props different from state?",
-    "answer": "Props are a component's configuration, immutable and set by the parent component. State is managed within the component and can be changed, typically used for dynamic data that the component itself will manage or alter."
+    "answer": "Props are a component's configuration, immutable and set by the parent component. State is managed within the component and can be changed, typically used for dynamic data that the component itself will manage or alter.",
+    "category": "fe"
   },
   {
     "id": 60,
     "question": "Whats your experience with React Hooks? Why use them?",
-    "answer": "React Hooks allow function components to handle state and side effects, enabling cleaner and more modular code without needing to use class components."
+    "answer": "React Hooks allow function components to handle state and side effects, enabling cleaner and more modular code without needing to use class components.",
+    "category": "fe"
   },
   {
     "id": 61,
     "question": "What is TDD and what benefits does it provide?",
-    "answer": "Test-Driven Development (TDD) is a software development approach where tests are written before the code. It ensures the code meets the requirements, leads to better design, and makes the code more maintainable."
+    "answer": "Test-Driven Development (TDD) is a software development approach where tests are written before the code. It ensures the code meets the requirements, leads to better design, and makes the code more maintainable.",
+    "category": "fe"
   },
   {
     "id": 62,
     "question": "What is TDD and what benefits does it provide?",
-    "answer": "TDD, or Test-Driven Development, is a software development approach where tests are written before the actual code. Benefits include ensuring code correctness, improving code design, and facilitating refactoring."
+    "answer": "TDD, or Test-Driven Development, is a software development approach where tests are written before the actual code. Benefits include ensuring code correctness, improving code design, and facilitating refactoring.",
+    "category": "fe"
   },
   {
     "id": 63,
     "question": "What is the difference between unit, integration, and acceptance-level testing?",
-    "answer": "Unit testing focuses on individual components, integration testing ensures different parts work together, and acceptance testing validates the product against requirements."
+    "answer": "Unit testing focuses on individual components, integration testing ensures different parts work together, and acceptance testing validates the product against requirements.",
+    "category": "fe"
   },
   {
     "id": 64,
     "question": "Tell me two advantages of testing your code.",
-    "answer": "Testing code helps catch bugs early and facilitates changes by ensuring new changes don't break existing functionality."
+    "answer": "Testing code helps catch bugs early and facilitates changes by ensuring new changes don't break existing functionality.",
+    "category": "fe"
   },
   {
     "id": 65,
     "question": "What is Flexbox and why is it important for creating layouts?",
-    "answer": "Flexbox is a CSS layout model that allows for flexible and responsive design structures, making it easier to align and distribute space among items in a container."
+    "answer": "Flexbox is a CSS layout model that allows for flexible and responsive design structures, making it easier to align and distribute space among items in a container.",
+    "category": "fe"
   },
   {
     "id": 66,
     "question": "What is Grid and why is it important for creating layouts?",
-    "answer": "CSS Grid is a powerful layout system for creating two-dimensional layouts. It provides precise control over the placement and sizing of grid components."
+    "answer": "CSS Grid is a powerful layout system for creating two-dimensional layouts. It provides precise control over the placement and sizing of grid components.",
+    "category": "fe"
   },
   {
     "id": 67,
     "question": "In as much detail as possible, explain how you would localize an application.",
-    "answer": "Localizing an application involves adapting it to different languages, regions, and cultures. This includes translating text, formatting dates and currencies, and supporting right-to-left text direction."
+    "answer": "Localizing an application involves adapting it to different languages, regions, and cultures. This includes translating text, formatting dates and currencies, and supporting right-to-left text direction.",
+    "category": "fe"
   },
   {
     "id": 68,
     "question": "Can you describe what responsive design is to you and how you would implement it?",
-    "answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Implementation involves using fluid grids, flexible images, and CSS media queries."
+    "answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. Implementation involves using fluid grids, flexible images, and CSS media queries.",
+    "category": "fe"
   },
   {
     "id": 69,
     "question": "What’s the difference between display: inline and display: inline-block?",
-    "answer": "display: inline elements don’t start on a new line and can’t have a width and height set. display: inline-block elements allow for width and height to be set, combining features of both inline and block."
+    "answer": "display: inline elements don’t start on a new line and can’t have a width and height set. display: inline-block elements allow for width and height to be set, combining features of both inline and block.",
+    "category": "fe"
   },
   {
     "id": 70,
     "question": "What is a pseudo class? What are they used for?",
-    "answer": "A pseudo-class is a keyword added to a selector that specifies a special state of the selected elements, such as :hover, :focus, etc. They are used to define a special behavior for the element."
+    "answer": "A pseudo-class is a keyword added to a selector that specifies a special state of the selected elements, such as :hover, :focus, etc. They are used to define a special behavior for the element.",
+    "category": "fe"
   },
   {
     "id": 71,
     "question": "Describe z-index and how stacking context is formed.",
-    "answer": "The z-index CSS property sets the z-order of a positioned element and its descendants. When elements overlap, z-index determines which one covers the other. A stacking context is formed by elements with a position other than static and a z-index value other than auto."
+    "answer": "The z-index CSS property sets the z-order of a positioned element and its descendants. When elements overlap, z-index determines which one covers the other. A stacking context is formed by elements with a position other than static and a z-index value other than auto.",
+    "category": "fe"
   },
   {
     "id": 72,
     "question": "If you have two elements inside of an outer containing element, one with float: left; and the other with float: right; how can you ensure that the containing element expands around the floated elements and does not collapse?",
-    "answer": "This can be achieved by using the 'clearfix' hack. It involves adding a pseudo-element after the floating elements with the 'clear' property set to 'both', ensuring the containing element encompasses the floated elements."
+    "answer": "This can be achieved by using the 'clearfix' hack. It involves adding a pseudo-element after the floating elements with the 'clear' property set to 'both', ensuring the containing element encompasses the floated elements.",
+    "category": "fe"
   },
   {
     "id": 73,
     "question": "In as much detail as possible, explain how JSON Web Tokens work.",
-    "answer": "JSON Web Tokens (JWTs) are an open standard for secure data exchange. A JWT is composed of three parts: a header that specifies the token type, a payload with claims, and a signature for verification. When a user logs in, the server creates a JWT and sends it back to the client. The client sends this token in the Authorization header for subsequent requests. The server verifies the token before processing the request."
+    "answer": "JSON Web Tokens (JWTs) are an open standard for secure data exchange. A JWT is composed of three parts: a header that specifies the token type, a payload with claims, and a signature for verification. When a user logs in, the server creates a JWT and sends it back to the client. The client sends this token in the Authorization header for subsequent requests. The server verifies the token before processing the request.",
+    "category": "fe"
   },
   {
     "id": 74,
     "question": "Explain why the following doesn’t work as an IIFE: function foo(){ }();. What needs to be changed to properly make it an IIFE?",
-    "answer": "The syntax function foo(){ }(); does not work as an IIFE because the function declaration foo is not treated as an expression. To make it an IIFE, the function should be turned into an expression by wrapping it in parentheses: (function foo(){ })(); or simply (function(){ })(); for an anonymous function."
+    "answer": "The syntax function foo(){ }(); does not work as an IIFE because the function declaration foo is not treated as an expression. To make it an IIFE, the function should be turned into an expression by wrapping it in parentheses: (function foo(){ })(); or simply (function(){ })(); for an anonymous function.",
+    "category": "fe"
   },
   {
     "id": 75,
     "question": "Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?",
-    "answer": "CSS <link>s are placed in the <head> to ensure styles are loaded before the content, preventing a flash of unstyled content. JS <script>s are placed just before </body> to allow the HTML to be parsed first, for a faster page load. Exceptions include scripts with 'async' or 'defer' attributes that don't block HTML parsing."
+    "answer": "CSS <link>s are placed in the <head> to ensure styles are loaded before the content, preventing a flash of unstyled content. JS <script>s are placed just before </body> to allow the HTML to be parsed first, for a faster page load. Exceptions include scripts with 'async' or 'defer' attributes that don't block HTML parsing.",
+    "category": "fe"
   },
   {
     "id": 76,
     "question": "In an HTML file, what does the ‘doctype’ keyword do?",
-    "answer": "The 'doctype' keyword is a declaration that informs the browser about the version of HTML used on the webpage. It helps the browser to render the page correctly, following the standards of the specified HTML version."
+    "answer": "The 'doctype' keyword is a declaration that informs the browser about the version of HTML used on the webpage. It helps the browser to render the page correctly, following the standards of the specified HTML version.",
+    "category": "fe"
   },
   {
     "id": 77,
     "question": "Give an example of a self-closing HTML tag.",
-    "answer": "Examples of self-closing HTML tags include <img />, <br />, and <hr />, which don't require separate closing tags."
+    "answer": "Examples of self-closing HTML tags include <img />, <br />, and <hr />, which don't require separate closing tags.",
+    "category": "fe"
   },
   {
     "id": 78,
     "question": "What’s the difference between window.onload and onDocumentReady?",
-    "answer": "window.onload is triggered when the entire page loads, including its content (images, CSS, scripts, etc.), whereas onDocumentReady is triggered when the DOM is ready for JavaScript code to execute, which can be before other resources have finished loading."
+    "answer": "window.onload is triggered when the entire page loads, including its content (images, CSS, scripts, etc.), whereas onDocumentReady is triggered when the DOM is ready for JavaScript code to execute, which can be before other resources have finished loading.",
+    "category": "fe"
   },
   {
     "id": 79,
     "question": "Give an example of an element that is considered a ‘block-level’ element? An example of an inline element?",
-    "answer": "An example of a block-level element is <div>, which takes up the full width available and starts on a new line. An example of an inline element is <span>, which does not start on a new line and only takes up as much width as necessary."
+    "answer": "An example of a block-level element is <div>, which takes up the full width available and starts on a new line. An example of an inline element is <span>, which does not start on a new line and only takes up as much width as necessary.",
+    "category": "fe"
   },
   {
     "id": 80,
     "question": "What could we use instead of <b> tags for bold and <i> tags for italics to make our HTML more semantic?",
-    "answer": "Instead of <b>, we could use <strong> to indicate importance, and instead of <i>, we could use <em> to denote emphasis, both of which provide semantic meaning to the text."
+    "answer": "Instead of <b>, we could use <strong> to indicate importance, and instead of <i>, we could use <em> to denote emphasis, both of which provide semantic meaning to the text.",
+    "category": "fe"
   },
   {
     "id": 81,
     "question": "What is the purpose of article, section, header, and footer tags?",
-    "answer": "The <article>, <section>, <header>, and <footer> tags are semantic elements that define the structure of a webpage. <article> represents a self-contained composition, <section> is a thematic grouping of content, <header> contains introductory content, and <footer> denotes the closing content of a section or article."
+    "answer": "The <article>, <section>, <header>, and <footer> tags are semantic elements that define the structure of a webpage. <article> represents a self-contained composition, <section> is a thematic grouping of content, <header> contains introductory content, and <footer> denotes the closing content of a section or article.",
+    "category": "fe"
   },
   {
     "id": 82,
     "question": "What are HTML data attributes?",
-    "answer": "HTML data attributes are used to store custom data on an element. They are prefixed with 'data-' and allow you to store extra information without using non-standard attributes or DOM properties."
+    "answer": "HTML data attributes are used to store custom data on an element. They are prefixed with 'data-' and allow you to store extra information without using non-standard attributes or DOM properties.",
+    "category": "fe"
   },
   {
     "id": 83,
     "question": "What steps do you take to make a website accessible?",
-    "answer": "To make a website accessible, I follow WAI-ARIA guidelines, use semantic HTML, ensure keyboard navigability, provide alt text for images, and ensure content is accessible through screen readers, among other strategies."
+    "answer": "To make a website accessible, I follow WAI-ARIA guidelines, use semantic HTML, ensure keyboard navigability, provide alt text for images, and ensure content is accessible through screen readers, among other strategies.",
+    "category": "fe"
   },
   {
     "id": 84,
     "question": "What is your code review process?",
-    "answer": "My code review process involves checking the code for readability, maintainability, functionality, and performance. I ensure it meets coding standards, includes proper documentation, has accompanying tests, and fulfills the requirements."
+    "answer": "My code review process involves checking the code for readability, maintainability, functionality, and performance. I ensure it meets coding standards, includes proper documentation, has accompanying tests, and fulfills the requirements.",
+    "category": "fe"
   },
   {
     "id": 85,
     "question": "What are the benefits of using a version control system like Git?",
-    "answer": "Using a VCS like Git allows for tracking changes, collaborating on code without conflict, reverting to previous versions, and managing multiple branches of development."
+    "answer": "Using a VCS like Git allows for tracking changes, collaborating on code without conflict, reverting to previous versions, and managing multiple branches of development.",
+    "category": "fe"
   },
   {
     "id": 86,
     "question": "How do you resolve a merge conflict?",
-    "answer": "To resolve a merge conflict, I identify the conflicting code, choose the correct changes or merge them manually, test to ensure functionality, and then mark the conflict as resolved before completing the merge."
+    "answer": "To resolve a merge conflict, I identify the conflicting code, choose the correct changes or merge them manually, test to ensure functionality, and then mark the conflict as resolved before completing the merge.",
+    "category": "fe"
   },
   {
     "id": 87,
     "question": "Explain how a branch works in Git.",
-    "answer": "A branch in Git is a separate line of development taken from the main codebase, allowing you to work on features, fixes, or experiments in isolation without affecting the main or other branches."
+    "answer": "A branch in Git is a separate line of development taken from the main codebase, allowing you to work on features, fixes, or experiments in isolation without affecting the main or other branches.",
+    "category": "fe"
   },
   {
     "id": 88,
     "question": "How do you make sure your project meets the requirements you have received?",
-    "answer": "I ensure my project meets requirements through a combination of requirement tracking, adhering to user stories, continuous testing, and regular stakeholder feedback."
+    "answer": "I ensure my project meets requirements through a combination of requirement tracking, adhering to user stories, continuous testing, and regular stakeholder feedback.",
+    "category": "fe"
   },
   {
     "id": 89,
     "question": "What IDE do you use?",
-    "answer": "The choice of IDE can vary based on personal preference and project requirements. Commonly used IDEs include Visual Studio Code, IntelliJ IDEA, and Sublime Text."
+    "answer": "The choice of IDE can vary based on personal preference and project requirements. Commonly used IDEs include Visual Studio Code, IntelliJ IDEA, and Sublime Text.",
+    "category": "fe"
   },
   {
     "id": 90,
     "question": "Do you know the concept of SCRUM?",
-    "answer": "SCRUM is an agile development framework that organizes software development around a set of roles, responsibilities, and meetings that never change. It emphasizes iterative progress, accountability, and collaborative decision-making."
+    "answer": "SCRUM is an agile development framework that organizes software development around a set of roles, responsibilities, and meetings that never change. It emphasizes iterative progress, accountability, and collaborative decision-making.",
+    "category": "fe"
   },
   {
     "id": 91,
     "question": "Explain what Agile is.",
-    "answer": "Agile is a set of values and principles expressed in the Agile Manifesto that promotes flexible, iterative development, collaboration, customer feedback, and responding to change over following a fixed plan."
+    "answer": "Agile is a set of values and principles expressed in the Agile Manifesto that promotes flexible, iterative development, collaboration, customer feedback, and responding to change over following a fixed plan.",
+    "category": "fe"
   }
 ]

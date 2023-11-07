@@ -11,38 +11,18 @@ import beTechnicalQuestions from '../../Data/beTechnicalQuestions.json';
 import '../App/App.css';
 
 export default function App() {
-
   const [feQuestions] = useState(feTechnicalQuestions);
   const [behavioralInterviewQuestions] = useState(behavioralQuestions);
   const [beQuestions] = useState(beTechnicalQuestions);
   const [error, setError] = useState(null);
-  
-  const [selectedCategory, setSelectedCategory] = useState('fe');
-  
-
   const [triviaLoading, setTriviaLoading] = useState(false);
 
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
-  };
-
-  const getQuestionsByCategory = () => {
-    switch (selectedCategory) {
-      case 'fe':
-        return feQuestions;
-      case 'behavioral':
-        return behavioralInterviewQuestions;
-      case 'be':
-        return beQuestions;
-      default:
-        return [];
-    }
-  };
+  const allQuestions = [...feQuestions, ...behavioralInterviewQuestions, ...beQuestions];
 
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage handleCategoryChange={handleCategoryChange} />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
         <Route 
@@ -51,7 +31,7 @@ export default function App() {
             <Errors 
               error={error} 
               setError={setError} 
-              setTriviaLoading={setTriviaLoading} 
+              setTriviaLoading={setTriviaLoading}
             />
           } 
         />
@@ -59,8 +39,7 @@ export default function App() {
           path="/flashcards"
           element={
             <FlashcardContainer
-              flashcards={getQuestionsByCategory()}
-              selectedCategory={selectedCategory}
+              flashcards={allQuestions} // Pass all questions here
             />
           }
         />

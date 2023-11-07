@@ -2,166 +2,199 @@
   {
     "id": 1,
     "question": "What made you switch from your prior career into programming?",
-    "answer": "The desire for a more challenging role with creative problem-solving, the potential for growth, and the constant evolution of technology that requires continuous learning made me switch to programming."
+    "answer": "The desire for a more challenging role with creative problem-solving, the potential for growth, and the constant evolution of technology that requires continuous learning made me switch to programming.",
+    "category": "behavioral" 
   },
   {
     "id": 2,
     "question": "How do you familiarize yourself with a codebase you haven’t worked in before?",
-    "answer": "I start by reviewing any available documentation, understanding the overall architecture, and then diving into the code itself, starting with the most critical parts. Pair programming and asking questions from existing team members also helps."
+    "answer": "I start by reviewing any available documentation, understanding the overall architecture, and then diving into the code itself, starting with the most critical parts. Pair programming and asking questions from existing team members also helps.",
+    "category": "behavioral" 
   },
   {
     "id": 3,
     "question": "Describe to me the steps you would take to build out a product.",
-    "answer": "I would begin with understanding the user's needs, defining the product's value proposition, designing a minimum viable product (MVP), choosing the right technology stack, and then entering a cycle of building, measuring, and learning for continuous improvement."
+    "answer": "I would begin with understanding the user's needs, defining the product's value proposition, designing a minimum viable product (MVP), choosing the right technology stack, and then entering a cycle of building, measuring, and learning for continuous improvement.",
+    "category": "behavioral" 
   },
   {
     "id": 4,
     "question": "Tell me how you solve a problem.",
-    "answer": "I approach problem-solving with a methodical process: identify the problem, gather information, generate possible solutions, evaluate options, execute a solution, and then review the results."
+    "answer": "I approach problem-solving with a methodical process: identify the problem, gather information, generate possible solutions, evaluate options, execute a solution, and then review the results.",
+    "category": "behavioral" 
   },
   {
     "id": 5,
     "question": "Describe your background. How did you get to where you are now? What was your previous career field. What did you like about it? What didn’t you like about it? Why coding?",
-    "answer": "My background is in [Previous Field]. I appreciated the [aspects liked], but found the [aspects disliked]. I was drawn to coding because of its [reasons for interest in coding], which aligns more with my career aspirations and interests."
+    "answer": "My background is in [Previous Field]. I appreciated the [aspects liked], but found the [aspects disliked]. I was drawn to coding because of its [reasons for interest in coding], which aligns more with my career aspirations and interests.",
+    "category": "behavioral" 
   },
   {
     "id": 6,
     "question": "Describe your time at Turing. What worked for you? What didn’t work for you? What was the structure of the program?",
-    "answer": "At Turing, the structured, project-based learning and the supportive community worked well for me. The pace was intense, which could be challenging, but it also facilitated rapid growth. The curriculum was structured around modules focusing on different aspects of software development."
+    "answer": "At Turing, the structured, project-based learning and the supportive community worked well for me. The pace was intense, which could be challenging, but it also facilitated rapid growth. The curriculum was structured around modules focusing on different aspects of software development.",
+    "category": "behavioral" 
   },
   {
     "id": 7,
     "question": "Describe your teamwork experience in a coding environment. How big of a team did you work with?",
-    "answer": "Provide a summary of your experience working within a coding team, the size of the team, and the nature of the projects you collaborated on."
+    "answer": "Provide a summary of your experience working within a coding team, the size of the team, and the nature of the projects you collaborated on.",
+    "category": "behavioral" 
   },
   {
     "id": 8,
     "question": "A lot of this job will be full-stack. Your experience is largely (Back End, Front End). How do you feel like you’d be able to contribute to the team with only that experience? How comfortable are you with getting uncomfortable with a new language?",
-    "answer": "Discuss your willingness and ability to learn and adapt to full-stack development, including learning new languages, and how your existing experience can be a valuable foundation."
+    "answer": "Discuss your willingness and ability to learn and adapt to full-stack development, including learning new languages, and how your existing experience can be a valuable foundation.",
+    "category": "behavioral" 
   },
   {
     "id": 9,
     "question": "Describe your coding experience and why you wish to continue?",
-    "answer": "Talk about your journey in coding so far, your achievements, challenges, and what drives your passion for continuing in this field."
+    "answer": "Talk about your journey in coding so far, your achievements, challenges, and what drives your passion for continuing in this field.",
+    "category": "behavioral" 
   },
   {
     "id": 10,
     "question": "What are you looking for in a company? Why would you want to work here?",
-    "answer": "Detail the qualities you're seeking in an employer and how the company in question aligns with your career goals and values."
+    "answer": "Detail the qualities you're seeking in an employer and how the company in question aligns with your career goals and values.",
+    "category": "behavioral" 
   },
   {
     "id": 11,
     "question": "Describe an example of how you have handled a stressful situation.",
-    "answer": "Share a specific incident where you successfully managed stress, highlighting your problem-solving and coping strategies."
+    "answer": "Share a specific incident where you successfully managed stress, highlighting your problem-solving and coping strategies.",
+    "category": "behavioral" 
   },
   {
     "id": 12,
     "question": "Have you ever had to switch gears in the middle of a project to get something fixed immediately? How did you react?",
-    "answer": "Provide an anecdote about a time you had to rapidly shift focus, describing your approach to prioritization and adaptability under pressure."
+    "answer": "Provide an anecdote about a time you had to rapidly shift focus, describing your approach to prioritization and adaptability under pressure.",
+    "category": "behavioral" 
   },
   {
     "id": 13,
     "question": "What is your 100% ideal role for your first web development job?",
-    "answer": "Outline your perfect entry-level position, considering factors like responsibilities, technologies, team dynamics, and learning opportunities."
+    "answer": "Outline your perfect entry-level position, considering factors like responsibilities, technologies, team dynamics, and learning opportunities.",
+    "category": "behavioral" 
   },
   {
     "id": 14,
     "question": "Tell me about a time you had a disagreement with a colleague and how you resolved it.",
-    "answer": "Recall a specific situation where you had a professional disagreement and explain the steps you took to resolve the issue, emphasizing communication and collaboration."
+    "answer": "Recall a specific situation where you had a professional disagreement and explain the steps you took to resolve the issue, emphasizing communication and collaboration.",
+    "category": "behavioral" 
   },
   {
     "id": 15,
     "question": "What project of yours are you most proud of and why?",
-    "answer": "Discuss a project that stands out in your memory, detailing what you did, the impact it had, and why it makes you feel proud."
+    "answer": "Discuss a project that stands out in your memory, detailing what you did, the impact it had, and why it makes you feel proud.",
+    "category": "behavioral" 
   },
   {
     "id": 16,
     "question": "Explain one of the most difficult code problems you’ve had to solve, either on your own authored code, or in contributing to someone else’s.",
-    "answer": "Describe a challenging coding issue you encountered, the strategies you used to tackle it, and the outcome of your efforts."
+    "answer": "Describe a challenging coding issue you encountered, the strategies you used to tackle it, and the outcome of your efforts.",
+    "category": "behavioral" 
   },
   {
     "id": 17,
     "question": "Describe a time when you received feedback that you were surprised by. What did you do with that feedback?",
-    "answer": "Share an instance when you received unexpected feedback, how you processed it, and the actions you took as a result to improve or address the feedback."
+    "answer": "Share an instance when you received unexpected feedback, how you processed it, and the actions you took as a result to improve or address the feedback.",
+    "category": "behavioral" 
   },
   {
     "id": 18,
     "question": "Describe a successful idea or project you worked on. What are some of the challenges you had to overcome? What made it a success?",
-    "answer": "Reflect on a successful project or idea, the obstacles faced, how you overcame them, and the factors that contributed to its success."
+    "answer": "Reflect on a successful project or idea, the obstacles faced, how you overcame them, and the factors that contributed to its success.",
+    "category": "behavioral" 
   },
   {
     "id": 19,
     "question": "Describe a project that failed, a project you had to give up on, or a time you worked really hard on a project and it just didn’t pan out as expected. What happened? How did you make the decisions that you made?",
-    "answer": "Talk about a project that did not succeed, the reasons behind the failure, the decision-making process you followed, and the lessons learned from the experience."
+    "answer": "Talk about a project that did not succeed, the reasons behind the failure, the decision-making process you followed, and the lessons learned from the experience.",
+    "category": "behavioral" 
   },
   {
     "id": 20,
     "question": "What is your approach to working on a team?",
-    "answer": "Describe your interpersonal skills, communication style, and how you contribute to a team setting to achieve common goals."
+    "answer": "Describe your interpersonal skills, communication style, and how you contribute to a team setting to achieve common goals.",
+    "category": "behavioral" 
   },
   {
     "id": 21,
     "question": "What is an area of growth for you?",
-    "answer": "Identify a professional development area you're working on, and explain the steps you're taking to improve in that area."
+    "answer": "Identify a professional development area you're working on, and explain the steps you're taking to improve in that area.",
+    "category": "behavioral" 
   },
   {
     "id": 22,
     "question": "Describe your strengths. How have you seen these in practice as a developer?",
-    "answer": "Highlight your key strengths with examples of how they have positively impacted your work as a developer."
+    "answer": "Highlight your key strengths with examples of how they have positively impacted your work as a developer.",
+    "category": "behavioral" 
   },
   {
     "id": 23,
     "question": "What is something that your hobbies or interests tell me about you that your resume cannot?",
-    "answer": "Share personal interests or hobbies that reflect on your character, skills, or values not apparent from your professional experience."
+    "answer": "Share personal interests or hobbies that reflect on your character, skills, or values not apparent from your professional experience.",
+    "category": "behavioral" 
   },
   {
     "id": 24,
     "question": "Tell me about a time you failed. How did you deal with the situation?",
-    "answer": "Recall a specific instance of failure, what you learned from it, and the measures you took to address or learn from the failure."
+    "answer": "Recall a specific instance of failure, what you learned from it, and the measures you took to address or learn from the failure.",
+    "category": "behavioral" 
   },
   {
     "id": 25,
     "question": "Give me an example of a time you were able to be creative with your work. What was exciting or difficult about it?",
-    "answer": "Discuss a moment where you applied creativity to solve a problem or improve a process, and describe any challenges you faced during this creative endeavor."
+    "answer": "Discuss a moment where you applied creativity to solve a problem or improve a process, and describe any challenges you faced during this creative endeavor.",
+    "category": "behavioral" 
   },
   {
     "id": 26,
     "question": "Sometimes it’s just not possible to get everything on your to-do list done. Tell me about a time your responsibilities got a little overwhelming. What did you do?",
-    "answer": "Explain a situation where you had to prioritize tasks due to a heavy workload, and describe how you managed your time and resources."
+    "answer": "Explain a situation where you had to prioritize tasks due to a heavy workload, and describe how you managed your time and resources.",
+    "category": "behavioral" 
   },
   {
     "id": 27,
     "question": "Tell me about a time you set a goal for yourself. How did you go about ensuring that you would meet your objective?",
-    "answer": "Provide details of a specific goal, your plan for achieving it, the steps you took to stay on track, and the outcome."
+    "answer": "Provide details of a specific goal, your plan for achieving it, the steps you took to stay on track, and the outcome.",
+    "category": "behavioral" 
   },
   {
     "id": 28,
     "question": "Tell me about a time when you had to rely on written communication to get your ideas across to your team.",
-    "answer": "Discuss a situation where you used written communication effectively to convey your thoughts or proposals to your team."
+    "answer": "Discuss a situation where you used written communication effectively to convey your thoughts or proposals to your team.",
+    "category": "behavioral" 
   },
   {
     "id": 29,
     "question": "Tell me about a successful presentation you gave and why you think it was a hit.",
-    "answer": "Reflect on a presentation that went well, what you did to prepare, and why it resonated with your audience."
+    "answer": "Reflect on a presentation that went well, what you did to prepare, and why it resonated with your audience.",
+    "category": "behavioral" 
   },
   {
     "id": 30,
     "question": "Describe a long-term project that you managed. How did you keep everything moving along in a timely manner?",
-    "answer": "Explain your project management approach, tools you used for organization, and how you maintained progress and met deadlines."
+    "answer": "Explain your project management approach, tools you used for organization, and how you maintained progress and met deadlines.",
+    "category": "behavioral" 
   },
   {
     "id": 31,
     "question": "Describe a time when you saw some problem and took the initiative to correct it rather than waiting for someone else to do it.",
-    "answer": "Share an example of your proactive approach to problem-solving and the impact of your actions."
+    "answer": "Share an example of your proactive approach to problem-solving and the impact of your actions.",
+    "category": "behavioral" 
   },
   {
     "id": 32,
     "question": "Tell me about a time when you worked under close supervision or extremely loose supervision. How did you handle that?",
-    "answer": "Describe your experience with different supervisory styles and how you adapted to working effectively under each."
+    "answer": "Describe your experience with different supervisory styles and how you adapted to working effectively under each.",
+    "category": "behavioral" 
   },
   {
     "id": 33,
     "question": "Tell me about a time you needed to get information from someone who wasn’t very responsive. What did you do?",
-    "answer": "Illustrate your communication and problem-solving skills by detailing how you managed to obtain the necessary information."
+    "answer": "Illustrate your communication and problem-solving skills by detailing how you managed to obtain the necessary information.",
+    "category": "behavioral" 
   }
 ]

@@ -2,151 +2,181 @@
   {
     "id": 1,
     "question": "What is the difference between Array#map and Array#each?",
-    "answer": "Array#map is used to transform each element of an array and return a new array with the transformed elements, while Array#each simply iterates over each element without returning a new array."
+    "answer": "Array#map is used to transform each element of an array and return a new array with the transformed elements, while Array#each simply iterates over each element without returning a new array.",
+    "category": "be"
   },
   {
     "id": 2,
     "question": "Name 4 Ruby enumerables excluding each and map and give a brief example of what’s unique about each.",
-    "answer": "select (returns an array containing all elements of enum for which the given block returns a true value), find (returns the first element for which block is not false), reduce (combines all elements of enum by applying a binary operation, specified by a block or symbol), and sort (returns an array containing the items in enum sorted)."
+    "answer": "select (returns an array containing all elements of enum for which the given block returns a true value), find (returns the first element for which block is not false), reduce (combines all elements of enum by applying a binary operation, specified by a block or symbol), and sort (returns an array containing the items in enum sorted).",
+    "category": "be"
   },
   {
     "id": 3,
     "question": "In as much detail as possible, describe the request-response cycle.",
-    "answer": "The request-response cycle begins when a client makes an HTTP request to a server, which processes the request, interacts with databases if needed, and then sends back an HTTP response with the requested information or a status indication."
+    "answer": "The request-response cycle begins when a client makes an HTTP request to a server, which processes the request, interacts with databases if needed, and then sends back an HTTP response with the requested information or a status indication.",
+    "category": "be"
   },
   {
     "id": 4,
     "question": "What’s a module in Ruby? What’s the difference between a class and a module? What are some good use cases for modules?",
-    "answer": "A module in Ruby is a collection of methods and constants. The difference between a class and a module is that classes are designed to be instantiated, while modules are not. Modules are used for namespaces and mixins to add functionality to classes."
+    "answer": "A module in Ruby is a collection of methods and constants. The difference between a class and a module is that classes are designed to be instantiated, while modules are not. Modules are used for namespaces and mixins to add functionality to classes.",
+    "category": "be"
   },
   {
     "id": 5,
     "question": "What are a few ways to optimize a Rails application?",
-    "answer": "Optimizing a Rails application can include database indexing, caching, eager loading to reduce N+1 queries, asset minification, and using background jobs for heavy tasks."
+    "answer": "Optimizing a Rails application can include database indexing, caching, eager loading to reduce N+1 queries, asset minification, and using background jobs for heavy tasks.",
+    "category": "be"
   },
   {
     "id": 6,
     "question": "What is HTTP and give a brief definition?",
-    "answer": "HTTP (HyperText Transfer Protocol) is the protocol used for transmitting web pages over the Internet. It defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands."
+    "answer": "HTTP (HyperText Transfer Protocol) is the protocol used for transmitting web pages over the Internet. It defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.",
+    "category": "be"
   },
   {
     "id": 7,
     "question": "What are three tools or strategies you use to prevent shipping unstable code to production?",
-    "answer": "To prevent shipping unstable code, I use continuous integration and delivery pipelines, thorough testing including unit, integration, and end-to-end tests, and code reviews."
+    "answer": "To prevent shipping unstable code, I use continuous integration and delivery pipelines, thorough testing including unit, integration, and end-to-end tests, and code reviews.",
+    "category": "be"
   },
   {
     "id": 8,
     "question": "What’s a background worker? When would we want to use a background worker?",
-    "answer": "A background worker is a process that runs a job in the background, outside of the user's request-response cycle. It's used for long-running tasks, like sending emails or processing files, to improve the responsiveness of the application."
+    "answer": "A background worker is a process that runs a job in the background, outside of the user's request-response cycle. It's used for long-running tasks, like sending emails or processing files, to improve the responsiveness of the application.",
+    "category": "be"
   },
   {
     "id": 9,
     "question": "What’s the difference between a session and a cookie?",
-    "answer": "A session is a server-side storage of user data, while a cookie is client-side. A session has a reference ID stored in a cookie. Sessions are more secure because the data is stored on the server, not the client."
+    "answer": "A session is a server-side storage of user data, while a cookie is client-side. A session has a reference ID stored in a cookie. Sessions are more secure because the data is stored on the server, not the client.",
+    "category": "be"
   },
   {
     "id": 10,
     "question": "Explain a git merge workflow vs a git rebase workflow.",
-    "answer": "A git merge workflow combines the histories of two branches by creating a new commit, while a git rebase workflow moves the entire feature branch to begin on the tip of the main branch, creating a linear history."
+    "answer": "A git merge workflow combines the histories of two branches by creating a new commit, while a git rebase workflow moves the entire feature branch to begin on the tip of the main branch, creating a linear history.",
+    "category": "be"
   },
   {
     "id": 11,
     "question": "What’s the difference between authentication and authorization? What tools have you used to set up auth in the past?",
-    "answer": "Authentication verifies a user's identity, while authorization determines what resources a user can access. Tools used for setting up authentication and authorization include Devise, OAuth, JWT, and Pundit."
+    "answer": "Authentication verifies a user's identity, while authorization determines what resources a user can access. Tools used for setting up authentication and authorization include Devise, OAuth, JWT, and Pundit.",
+    "category": "be"
   },
   {
     "id": 12,
     "question": "What is TDD and give a brief definition?",
-    "answer": "TDD, or Test-Driven Development, is a software development approach where tests are written for a new feature before the actual feature code is written."
+    "answer": "TDD, or Test-Driven Development, is a software development approach where tests are written for a new feature before the actual feature code is written.",
+    "category": "be"
   },
   {
     "id": 13,
     "question": "What does API stand for and how do you define it?",
-    "answer": "API stands for Application Programming Interface. It is a set of rules and protocols for building and interacting with software applications."
+    "answer": "API stands for Application Programming Interface. It is a set of rules and protocols for building and interacting with software applications.",
+    "category": "be"
   },
   {
     "id": 14,
     "question": "What does it mean to compile code?",
-    "answer": "Compiling code means translating code written in a high-level programming language into a lower-level language, often machine code or byte code, that can be executed by a computer."
+    "answer": "Compiling code means translating code written in a high-level programming language into a lower-level language, often machine code or byte code, that can be executed by a computer.",
+    "category": "be"
   },
   {
     "id": 15,
     "question": "Tell me two advantages of testing your code.",
-    "answer": "Testing code ensures that it works as expected and helps prevent future changes from breaking existing functionality. It also improves code quality and can make the codebase easier to maintain."
+    "answer": "Testing code ensures that it works as expected and helps prevent future changes from breaking existing functionality. It also improves code quality and can make the codebase easier to maintain.",
+    "category": "be"
   },
   {
     "id": 16,
     "question": "My production and development environments are using large sets of data. What are some ways to optimize my tests to run quickly, but be thorough?",
-    "answer": "To optimize tests, use test doubles like mocks and stubs, set up a separate test database, employ efficient test data management strategies, and prioritize which tests to run based on the changes made."
+    "answer": "To optimize tests, use test doubles like mocks and stubs, set up a separate test database, employ efficient test data management strategies, and prioritize which tests to run based on the changes made.",
+    "category": "be"
   },
   {
     "id": 17,
     "question": "What is a Mock vs. a Stub in testing? When would you use each?",
-    "answer": "A Mock is an object that simulates the behavior of a real object with pre-defined returns to method calls, used for verifying interactions. A Stub is a simpler object that provides canned responses, used for providing indirect input to the system."
+    "answer": "A Mock is an object that simulates the behavior of a real object with pre-defined returns to method calls, used for verifying interactions. A Stub is a simpler object that provides canned responses, used for providing indirect input to the system.",
+    "category": "be"
   },
   {
     "id": 18,
     "question": "What is yield in Ruby? What is it useful for? Give an example of where you would put it.",
-    "answer": "In Ruby, 'yield' passes control from the calling method to the block given to the method. It's useful for custom iteration, implementing callbacks, and code that requires the insertion of custom behavior."
+    "answer": "In Ruby, 'yield' passes control from the calling method to the block given to the method. It's useful for custom iteration, implementing callbacks, and code that requires the insertion of custom behavior.",
+    "category": "be"
   },
   {
     "id": 19,
     "question": "Describe each of the four fundamental concepts of object-oriented programming. How would you implement each of these in your code?",
-    "answer": "The four concepts are Encapsulation (data hiding), Abstraction (simplifying complex reality), Inheritance (sharing among classes), and Polymorphism (many forms). They can be implemented through class and method design, inheritance hierarchies, and interfaces or polymorphic methods."
+    "answer": "The four concepts are Encapsulation (data hiding), Abstraction (simplifying complex reality), Inheritance (sharing among classes), and Polymorphism (many forms). They can be implemented through class and method design, inheritance hierarchies, and interfaces or polymorphic methods.",
+    "category": "be"
   },
   {
     "id": 20,
     "question": "An enumerable by any other name still behaves the same. Give the other name for these 3 Ruby enumerables: Detect, Select, Collect.",
-    "answer": "The alternate names are 'find' for 'detect', 'filter' for 'select', and 'map' for 'collect'."
+    "answer": "The alternate names are 'find' for 'detect', 'filter' for 'select', and 'map' for 'collect'.",
+    "category": "be"
   },
   {
     "id": 21,
     "question": "In as much detail as possible, describe DNS.",
-    "answer": "DNS, or Domain Name System, is the protocol that translates human-friendly domain names to IP addresses that computers use to identify each other on the network. It functions like a directory service for the internet."
+    "answer": "DNS, or Domain Name System, is the protocol that translates human-friendly domain names to IP addresses that computers use to identify each other on the network. It functions like a directory service for the internet.",
+    "category": "be"
   },
   {
     "id": 22,
     "question": "What does CORS stand for and what issue does it address?",
-    "answer": "CORS stands for Cross-Origin Resource Sharing. It allows servers to specify who (which origins) can access the resources on the server, overcoming the same-origin policy of the web for security reasons."
+    "answer": "CORS stands for Cross-Origin Resource Sharing. It allows servers to specify who (which origins) can access the resources on the server, overcoming the same-origin policy of the web for security reasons.",
+    "category": "be"
   },
   {
     "id": 23,
     "question": "In as much detail as possible, tell me about JSON Web Tokens.",
-    "answer": "JSON Web Tokens (JWTs) are a compact, URL-safe means of representing claims to be transferred between two parties. They are used for authentication, secure data exchange, and can be signed for integrity and/or encrypted for secrecy."
+    "answer": "JSON Web Tokens (JWTs) are a compact, URL-safe means of representing claims to be transferred between two parties. They are used for authentication, secure data exchange, and can be signed for integrity and/or encrypted for secrecy.",
+    "category": "be"
   },
   {
     "id": 24,
     "question": "What is your code review process?",
-    "answer": "The process involves checking code for correctness, maintainability, performance, and adherence to coding standards. It often includes automated testing, manual inspection, and discussions among developers."
+    "answer": "The process involves checking code for correctness, maintainability, performance, and adherence to coding standards. It often includes automated testing, manual inspection, and discussions among developers.",
+    "category": "be"
   },
   {
     "id": 25,
     "question": "Explain as much as you can about RESTful APIs.",
-    "answer": "RESTful APIs adhere to REST architecture, using standard HTTP methods, stateless communication, and resource-oriented URLs. They provide a way to interact with web services using CRUD operations over HTTP."
+    "answer": "RESTful APIs adhere to REST architecture, using standard HTTP methods, stateless communication, and resource-oriented URLs. They provide a way to interact with web services using CRUD operations over HTTP.",
+    "category": "be"
   },
   {
     "id": 26,
     "question": "Describe what an MVC architecture is.",
-    "answer": "MVC stands for Model-View-Controller, a design pattern that separates an application into three main logical components: the model (data), the view (UI), and the controller (business logic)."
+    "answer": "MVC stands for Model-View-Controller, a design pattern that separates an application into three main logical components: the model (data), the view (UI), and the controller (business logic).",
+    "category": "be"
   },
   {
     "id": 27,
     "question": "Describe what an SOA (Service Oriented Architecture) application is and looks like? What are the benefits and drawbacks?",
-    "answer": "SOA is an architectural pattern in software design where services are provided to other components by application components, through a communication protocol over a network. Benefits include reusability and scalability, while drawbacks can include complexity and performance overhead."
+    "answer": "SOA is an architectural pattern in software design where services are provided to other components by application components, through a communication protocol over a network. Benefits include reusability and scalability, while drawbacks can include complexity and performance overhead.",
+    "category": "be"
   },
   {
     "id": 28,
     "question": "Explain to me the general meaning behind each series of error codes (ex. 200’s, 300’s, 400’s, 500’s).",
-    "answer": "200’s indicate success, 300’s redirection, 400’s client errors, and 500’s server errors."
+    "answer": "200’s indicate success, 300’s redirection, 400’s client errors, and 500’s server errors.",
+    "category": "be"
   },
   {
     "id": 29,
     "question": "There are only 2 values in Ruby that evaluate to false - what are they?",
-    "answer": "In Ruby, the only two values that evaluate to false are 'nil' and the boolean 'false' itself."
+    "answer": "In Ruby, the only two values that evaluate to false are 'nil' and the boolean 'false' itself.",
+    "category": "be"
   },
   {
     "id": 30,
     "question": "What is Rails?",
-    "answer": "Rails is a robust web application framework that follows the MVC architecture. It's designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. It's a popular choice for web development due to its productivity and focus on convention over configuration."
+    "answer": "Rails is a robust web application framework that follows the MVC architecture. It's designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. It's a popular choice for web development due to its productivity and focus on convention over configuration.",
+    "category": "be"
   }
 ]
