@@ -39,7 +39,7 @@ export default function App() {
           path="/flashcards"
           element={
             <FlashcardContainer
-              flashcards={allQuestions} // Pass all questions here
+              flashcards={allQuestions} 
             />
           }
         />
