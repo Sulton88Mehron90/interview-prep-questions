@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import './Flashcard.css'; // Ensure this path is correct
+import './Flashcard.css';
 
 export default function Flashcard({ flashcard }) {
   const [flip, setFlip] = useState(false);
@@ -19,7 +19,7 @@ export default function Flashcard({ flashcard }) {
     setMaxHeight();
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);
-  }, [flashcard.question, flashcard.answer]); // Recalculate height if the question or answer changes
+  }, [flashcard.question, flashcard.answer]);
 
   return (
     <div

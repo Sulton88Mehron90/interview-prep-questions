@@ -22,7 +22,7 @@ export default function FlashcardContainer({ flashcards }) {
 FlashcardContainer.propTypes = {
   flashcards: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // Accept either string or number for id
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
       question: PropTypes.string.isRequired,
       answer: PropTypes.string.isRequired,
     })

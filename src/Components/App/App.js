@@ -11,24 +11,21 @@ import beTechnicalQuestions from '../../Data/beTechnicalQuestions.json';
 import '../App/App.css';
 
 export default function App() {
-  // State for the questions
+
   const [feQuestions] = useState(feTechnicalQuestions);
   const [behavioralInterviewQuestions] = useState(behavioralQuestions);
   const [beQuestions] = useState(beTechnicalQuestions);
   const [error, setError] = useState(null);
   
-  // State for the selected category
   const [selectedCategory, setSelectedCategory] = useState('fe');
   
-  // State for loading status
+
   const [triviaLoading, setTriviaLoading] = useState(false);
 
-  // Function to change the selected category
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
 
-  // Function to get questions based on the selected category
   const getQuestionsByCategory = () => {
     switch (selectedCategory) {
       case 'fe':
@@ -54,7 +51,7 @@ export default function App() {
             <Errors 
               error={error} 
               setError={setError} 
-              setTriviaLoading={setTriviaLoading} // Prop is now passed down
+              setTriviaLoading={setTriviaLoading} 
             />
           } 
         />
