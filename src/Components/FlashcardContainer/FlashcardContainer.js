@@ -2,23 +2,27 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../FlashcardContainer/FlashcardContainer.css';
-import BrainImage from '../../Images/brain2.png';
 import { Link } from 'react-router-dom';
+import BrainImage from '../../Images/brain2.png';
+import './FlashcardContainer.css'; 
 
 export default function FlashcardContainer({ flashcards }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [category, setCategory] = useState(location.state?.category || 'fe');
+  const [category, setCategory] = useState(location.state?.category || 'all');
   const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 3);
   const [filteredFlashcards, setFilteredFlashcards] = useState([]);
 
   useEffect(() => {
-    const filtered = flashcards.filter(card => card.category === category);
+    let filtered = flashcards;
+    if (category !== 'all') {
+      filtered = flashcards.filter(card => card.category === category);
+    }
     setFilteredFlashcards(filtered.slice(0, numberOfQuestions));
   }, [category, numberOfQuestions, flashcards]);
 
+  // Event handlers
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
   };
@@ -29,32 +33,29 @@ export default function FlashcardContainer({ flashcards }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const filtered = flashcards.filter(card => card.category === category);
-    setFilteredFlashcards(filtered.slice(0, numberOfQuestions));
+    navigate('/flashcards', { state: { category, numberOfQuestions } });
   };
 
   return (
     <div className='container' role="main">
       <form onSubmit={handleSubmit} className="category-form">
-        <label>
-          Category:
-          <select value={category} onChange={handleCategoryChange}>
-            <option value="fe">Frontend</option>
-            <option value="be">Backend</option>
-            <option value="behavioral">Behavioral</option>
-          </select>
-        </label>
-        <label>
-          Number of Questions:
-          <input 
-            type="number" 
-            value={numberOfQuestions} 
-            onChange={handleNumberOfQuestionsChange}
-            min="1" 
-            max="100" 
-          />
-        </label>
-        <button type="submit">Update</button>
+        <label htmlFor="category-select">Category:</label>
+        <select id="category-select" value={category} onChange={handleCategoryChange}>
+          <option value="all">All</option>
+          <option value="fe">Frontend</option>
+          <option value="be">Backend</option>
+          <option value="behavioral">Behavioral</option>
+        </select>
+        <label htmlFor="number-of-questions">Number of Questions:</label>
+        <input 
+          id="number-of-questions"
+          type="number" 
+          value={numberOfQuestions} 
+          onChange={handleNumberOfQuestionsChange}
+          min="1" 
+          max="100" 
+        />
+        <button type="submit" className="update-button">Update</button>
       </form>
       <div className='card-grid' aria-live="polite">
         {filteredFlashcards.map((flashcard, index) => (
@@ -66,6 +67,7 @@ export default function FlashcardContainer({ flashcards }) {
     </div>
   );
 }
+
 
 FlashcardContainer.propTypes = {
   flashcards: PropTypes.arrayOf(
