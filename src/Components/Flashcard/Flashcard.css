@@ -35,7 +35,9 @@
   padding: 20px;
   border-radius: 10px;
   word-wrap: break-word;
-  text-align: justify;
+  line-height: 1.4;
+  word-spacing: 0px; 
+  text-align: left; 
 }
 
 .card-content {
@@ -46,7 +48,8 @@
   padding: 1em;
   word-wrap: break-word;
   font-size: 0.9em;
-  line-height: 1.2;
+  line-height: 1.4;
+  word-spacing: 0px; 
 }
 
 .front {
