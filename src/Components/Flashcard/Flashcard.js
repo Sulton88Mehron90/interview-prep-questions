@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import './Flashcard.css';
 
-export default function Flashcard({ flashcard }) {
-  const [flip, setFlip] = useState(false);
+export default function Flashcard({ flashcard, flipped, onFlip }) {
   const [height, setHeight] = useState('initial');
   
   const frontEl = useRef();
@@ -19,13 +18,17 @@ export default function Flashcard({ flashcard }) {
     setMaxHeight();
     window.addEventListener('resize', setMaxHeight);
     return () => window.removeEventListener('resize', setMaxHeight);
-  }, [flashcard.question, flashcard.answer, flip]);
+  }, [flashcard.question, flashcard.answer, flipped]);
+
+  useEffect(() => {
+    setMaxHeight();
+  }, [flipped]);
 
   return (
     <div
-      className={`card ${flip ? 'flip' : ''}`}
+      className={`card ${flipped ? 'flip' : ''}`}
       style={{ height: height }}
-      onClick={() => setFlip(!flip)}
+      onClick={onFlip} 
     >
       <div className="card-inner">
         <div className="front card-content" ref={frontEl}>
@@ -44,4 +47,12 @@ Flashcard.propTypes = {
     question: PropTypes.string.isRequired,
     answer: PropTypes.string.isRequired,
   }).isRequired,
+  flipped: PropTypes.bool, 
+  onFlip: PropTypes.func, 
+};
+
+
+Flashcard.defaultProps = {
+  flipped: false,
+  onFlip: () => {}, 
 };
