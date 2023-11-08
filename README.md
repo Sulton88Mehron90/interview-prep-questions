@@ -13,13 +13,13 @@ This initiative is a part of the Mod 4, [Capstone Project](https://mod4.turing.e
 
 <!-- <img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/07d2bf4c-0b57-42b3-8254-56e133f377a3"> -->
 
-### <span style="color:#2E8B57;">Live Demo</span>
+<!-- ### <span style="color:#2E8B57;">Live Demo</span>-->
 
-[let’s practice](https://interview-prep-questions.vercel.app/).
+[let’s practice](https://interview-prep-questions.vercel.app/)
 
 <!-- Upon entering the platform, users are greeted with a dynamic real-time feed showcasing the current needs of each camp. Navigate through the integrated map interface to locate nearby refugee camps swiftly. The platform also offers educational resources, empowering users with insights on effective assistance methods and cultural considerations. -->
 
-<img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/11311fac-e5a5-4ee8-aa0c-f1008cb1ad03">
+<!-- <img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/11311fac-e5a5-4ee8-aa0c-f1008cb1ad03">  -->
 
 <!-- ### <span style="color:#2E8B57;">Features</span> -->
 
