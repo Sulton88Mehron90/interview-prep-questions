@@ -78,7 +78,7 @@ export default function FlashcardContainer({ flashcards }) {
           value={numberOfQuestions}
           onChange={handleNumberOfQuestionsChange}
           min="1"
-          max="100"
+          max="154"
         />
         <button type="submit" className="update-button">Update</button>
       </form>
