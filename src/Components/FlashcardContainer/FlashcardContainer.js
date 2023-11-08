@@ -6,11 +6,26 @@ import { Link } from 'react-router-dom';
 import BrainImage from '../../Images/brain2.png';
 import './FlashcardContainer.css';
 
+function shuffleArray(array) {
+  let currentIndex = array.length, randomIndex;
+
+  while (currentIndex !== 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 export default function FlashcardContainer({ flashcards }) {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [category, setCategory] = useState(location.state?.category || '');
+  const [category, setCategory] = useState(location.state?.category || 'all');
   const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 3);
   const [filteredFlashcards, setFilteredFlashcards] = useState([]);
 
@@ -19,8 +34,10 @@ export default function FlashcardContainer({ flashcards }) {
   useEffect(() => {
     let filtered = flashcards;
 
-    if (category) {
+    if (category !== 'all') {
       filtered = flashcards.filter(card => card.category === category);
+    } else {
+      filtered = shuffleArray([...flashcards]);
     }
 
     setFilteredFlashcards(filtered.slice(0, numberOfQuestions));
@@ -40,12 +57,7 @@ export default function FlashcardContainer({ flashcards }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (category) {
-      navigate('/flashcards', { state: { category, numberOfQuestions } });
-    } else {
-
-      alert('Please choose a category.');
-    }
+    navigate('/flashcards', { state: { category, numberOfQuestions } });
   };
 
   return (
@@ -53,21 +65,21 @@ export default function FlashcardContainer({ flashcards }) {
       <form onSubmit={handleSubmit} className="category-form">
         <label htmlFor="category-select">Category:</label>
         <select id="category-select" value={category} onChange={handleCategoryChange} required>
-        <option value="" disabled className="smaller-text">Choose one</option>
+          <option value="all">All</option>
           <option value="fe">Frontend</option>
           <option value="be">Backend</option>
           <option value="behavioral">Behavioral</option>
         </select>
         <label htmlFor="number-of-questions">Number of Questions:</label>
         <input
-  className="smaller-text"
-  id="number-of-questions"
-  type="number"
-  value={numberOfQuestions}
-  onChange={handleNumberOfQuestionsChange}
-  min="1"
-  max="100"
-/>
+          className="smaller-text"
+          id="number-of-questions"
+          type="number"
+          value={numberOfQuestions}
+          onChange={handleNumberOfQuestionsChange}
+          min="1"
+          max="100"
+        />
         <button type="submit" className="update-button">Update</button>
       </form>
       <div className='card-grid' aria-live="polite">
