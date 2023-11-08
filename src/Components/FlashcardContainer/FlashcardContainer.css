@@ -33,24 +33,31 @@ body {
   font-size: 1.2rem;
 }
 
-.category-form label,
 .category-form select,
 .category-form input,
 .category-form button {
   margin: 0.9rem;
   flex: 2;
   color: #777;
+  font-size: 0.9rem;
+}
+
+.category-form label {
+  flex: 2;
+  color: #777;
   font-size: 1.1rem;
 }
+
 
 .category-form label,
 .category-form select,
 .category-form input {
   flex: 1;
-  margin: 0.5rem;
+  margin: 0.9rem;
 }
 
-.smaller-text {
+.category-form select.smaller-text,
+.category-form input.smaller-text {
   font-size: 0.9rem;
 }
 
