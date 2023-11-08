@@ -1,7 +1,6 @@
 <div>
     <h1 style="color:red; display: inline;">
-      interview-prep
-         <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/blob/main/src/Images/chess2.png" alt="refuge logo" width="105" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
+        <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/blob/main/src/Images/chess2.png" alt="interview-prep logo" width="105" style="margin-left: 5px; border-radius: 50%; vertical-align: middle;">
     </h1>
 </div>
 
