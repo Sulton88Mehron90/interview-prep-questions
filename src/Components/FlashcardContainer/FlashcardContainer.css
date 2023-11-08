@@ -171,6 +171,9 @@ img.brain-img {
 /* Media Queries for Responsiveness */
 
 @media only screen and (max-width: 480px) {
+  .category-form {
+    margin: 1rem;
+  }
   .container {
     padding: 0;
   }
@@ -183,27 +186,18 @@ img.brain-img {
 }
 
 @media only screen and (max-width: 768px) {
-
   .category-form {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .category-form label,
   .category-form select,
   .category-form input,
   .category-form button {
-    flex: none;
-    width: 100%;
-    margin: 0.5rem 0;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  .card {
-    min-width: 150px;
-    padding: 1rem;
+    width: auto; 
+    margin: 0.5rem;
+    flex: none; 
   }
 }
 
