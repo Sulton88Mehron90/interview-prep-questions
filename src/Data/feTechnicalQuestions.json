@@ -367,8 +367,8 @@
   },
   {
     "id": 62,
-    "question": "What is TDD and what benefits does it provide?",
-    "answer": "TDD, or Test-Driven Development, is a software development approach where tests are written before the actual code. Benefits include ensuring code correctness, improving code design, and facilitating refactoring.",
+    "question": "What is the value of this inside an arrow function in JavaScript?",
+    "answer": "The value of this inside an arrow function in JavaScript is lexically scoped, meaning it uses this from the code that contains the arrow function. Unlike regular functions, an arrow function does not have its own this context; it inherits this from its parent scope at the time it is created. This is a key feature of arrow functions and is particularly useful in scenarios where you want to retain the context of this from an outer method or function.",
     "category": "fe"
   },
   {
