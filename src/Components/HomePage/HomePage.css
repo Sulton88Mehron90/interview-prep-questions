@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #e50914; 
   --secondary-color: #221f1f;
   --background-color: #141414; 
@@ -38,4 +38,65 @@
   background-color: darken(var(--primary-color), 10%); 
   transform: translateY(-3px);
 }
+ */
+ 
+ /* HomePage.css */
 
+:root {
+  --primary-color: #e50914; 
+  --secondary-color: #221f1f;
+  --background-color: #141414; 
+  --text-color: #fff; 
+  --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: var(--background-color); 
+  color: var(--text-color);
+}
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+.home__image {
+  width: 50px; 
+  height: auto; 
+  margin: 0 10px;
+  border-radius: 40%;
+}
+
+.home__start-button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.home__start-button:hover {
+  background-color: #b20710;
+  transform: translateY(-3px);
+}
