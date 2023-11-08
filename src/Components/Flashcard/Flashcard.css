@@ -2,10 +2,22 @@
   cursor: pointer;
   perspective: 1000px;
   width: 300px;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 2rem;
   background-color: var(--secondary-color);
   color: var(--text-color);
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  min-height: 200px;
+  /* padding: 0.5rem; */
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
 }
 
 .card-inner {
@@ -17,6 +29,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transform-origin: center;
+  height: 100%;
 }
 
 .card.flip .card-inner {
@@ -38,6 +51,9 @@
   line-height: 1.4;
   word-spacing: 0px; 
   text-align: left; 
+  transition: box-shadow 0.3s ease-in-out;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
 .card-content {
@@ -55,10 +71,12 @@
 .front {
   background-color: var(--secondary-color);
   color: var(--text-color);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
 }
 
 .back {
   background-color: var(--primary-color);
   color: var(--text-color);
   transform: rotateY(180deg);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
 }

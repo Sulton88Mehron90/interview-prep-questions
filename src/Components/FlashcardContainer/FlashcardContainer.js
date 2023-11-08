@@ -22,7 +22,6 @@ export default function FlashcardContainer({ flashcards }) {
     setFilteredFlashcards(filtered.slice(0, numberOfQuestions));
   }, [category, numberOfQuestions, flashcards]);
 
-  // Event handlers
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
   };

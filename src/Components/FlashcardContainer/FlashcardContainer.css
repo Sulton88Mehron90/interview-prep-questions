@@ -1,42 +1,111 @@
+body {
+  background-color: #C8D0D2;
+  margin: 0;
+}
+
 .container {
   padding: 2rem;
-  background-color: #141414; 
-  color: #ffffff; 
+  /* background-color: #fff;  */
+  color: #141414;
+  background-color: #141414;
+  /* color: #ffffff;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  margin-bottom: 20px;
+  max-width: 900px;
+  /* margin: auto; */
+  margin: 1rem 2rem;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 0 1.5rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.category-form label,
+.category-form select,
+.category-form input,
+.category-form button {
+  margin: 0.9rem;
+  flex: 2;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.category-form label,
+.category-form select,
+.category-form input {
+  flex: 1;
+  margin: 0.5rem;
 }
 
 .card-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.category-form {
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto;
+  background-color: #f8f8f8;
+  padding: 0.2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .go-back-button {
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin-top: 2rem;
   text-decoration: none;
-  background-color: #e50914; 
+  background-color: #e50914;
   color: white;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  justify-self: center;
+  grid-column: 1 / -1;
 }
 
 .go-back-button:hover {
-  background-color: #f40612; 
+  background-color: #f40612;
 }
 
 img.brain-img {
-  grid-column: 1 / -1;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px whitesmoke;
   justify-self: center;
-  width: 50%;
-  max-width: 300px;
+  grid-column: 1 / -1;
   margin-top: 2rem;
 }
 
-button.update-button {
-  background-color: #e50914; 
+.category-form button.update-button {
+  flex: 0;
+  background-color: #e50914;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -44,8 +113,108 @@ button.update-button {
   margin-top: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
 }
 
-button.update-button:hover {
-  background-color: #f40612; 
+.category-form button.update-button:hover {
+  background-color: #f40612;
+}
+
+
+
+
+/* Spinner */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.spinner {
+  border: 4px solid hsl(200, 100%, 50%);
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border-left-color: #E50914;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .card {
+    min-width: 150px;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .card {
+    min-width: 100px;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .category-form {
+    flex-direction: column;
+  }
+
+  .category-form label,
+  .category-form select,
+  .category-form input,
+  .category-form button {
+    flex: none;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    min-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .card {
+    min-width: 100px;
+  }
+
+}
+
+
+:root {
+  --primary-color: #e50914;
+  --secondary-color: #141414;
+  --text-color: #ffffff;
 }
