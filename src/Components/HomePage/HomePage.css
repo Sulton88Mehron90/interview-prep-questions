@@ -81,8 +81,14 @@
 .home__image {
   width: 50px; 
   height: auto; 
-  margin: 0 10px;
-  border-radius: 40%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 3px;
+  justify-self: center;
+  grid-column: 1 / -1;
+  /* margin-bottom: 1rem; */
+  box-shadow: 0 4px 8px rgb(228, 229, 216);
+  /* box-shadow: 0 4px 8px whitesmoke; */
 }
 
 .home__start-button {
