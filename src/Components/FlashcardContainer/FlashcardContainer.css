@@ -50,6 +50,10 @@ body {
   margin: 0.5rem;
 }
 
+.smaller-text {
+  font-size: 0.9rem;
+}
+
 .card-grid {
   width: 100%;
   max-width: 1200px;
@@ -58,6 +62,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   grid-template-rows: auto 1fr;
+  /* box-shadow: #e1e3e3; */
 }
 
 .category-form {

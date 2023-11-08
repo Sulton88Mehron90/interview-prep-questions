@@ -39,11 +39,11 @@ export default function FlashcardContainer({ flashcards }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
- 
+
     if (category) {
       navigate('/flashcards', { state: { category, numberOfQuestions } });
     } else {
-   
+
       alert('Please choose a category.');
     }
   };
@@ -53,28 +53,29 @@ export default function FlashcardContainer({ flashcards }) {
       <form onSubmit={handleSubmit} className="category-form">
         <label htmlFor="category-select">Category:</label>
         <select id="category-select" value={category} onChange={handleCategoryChange} required>
-          <option value="" disabled>Choose one</option>
+        <option value="" disabled className="smaller-text">Choose one</option>
           <option value="fe">Frontend</option>
           <option value="be">Backend</option>
           <option value="behavioral">Behavioral</option>
         </select>
         <label htmlFor="number-of-questions">Number of Questions:</label>
         <input
-          id="number-of-questions"
-          type="number"
-          value={numberOfQuestions}
-          onChange={handleNumberOfQuestionsChange}
-          min="1"
-          max="100"
-        />
+  className="smaller-text"
+  id="number-of-questions"
+  type="number"
+  value={numberOfQuestions}
+  onChange={handleNumberOfQuestionsChange}
+  min="1"
+  max="100"
+/>
         <button type="submit" className="update-button">Update</button>
       </form>
       <div className='card-grid' aria-live="polite">
         {filteredFlashcards.map((flashcard, index) => (
-          <Flashcard 
-            key={flashcard.id || index} 
-            flashcard={flashcard} 
-            flipped={flippedStates[flashcard.id]} 
+          <Flashcard
+            key={flashcard.id || index}
+            flashcard={flashcard}
+            flipped={flippedStates[flashcard.id]}
             onFlip={() => setFlippedStates({ ...flippedStates, [flashcard.id]: !flippedStates[flashcard.id] })}
           />
         ))}
