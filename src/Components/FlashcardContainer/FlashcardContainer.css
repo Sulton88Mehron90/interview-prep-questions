@@ -57,6 +57,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
+  grid-template-rows: auto 1fr;
 }
 
 .category-form {
@@ -73,7 +74,7 @@ body {
   flex-wrap: wrap;
 }
 
-.go-back-button {
+button go-back-button {
   text-decoration: none;
   background-color: #e50914;
   color: white;
@@ -92,9 +93,16 @@ body {
   background-color: #f40612;
 }
 
+.exit-and-brain-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px; 
+}
+
 img.brain-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px whitesmoke;
@@ -155,6 +163,10 @@ img.brain-img {
 /* Media Queries for Responsiveness */
 
 @media only screen and (max-width: 768px) {
+
+  .exit-and-brain-container {
+    flex-direction: column;
+  }
   .container {
     padding: 0 1rem;
   }

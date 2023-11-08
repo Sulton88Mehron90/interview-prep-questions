@@ -23,32 +23,27 @@ export default function FlashcardContainer({ flashcards }) {
       filtered = flashcards.filter(card => card.category === category);
     }
 
-    // Update the state with the filtered flashcards
     setFilteredFlashcards(filtered.slice(0, numberOfQuestions));
 
-    // Reset the flipped state for all cards
     setFlippedStates({});
 
   }, [category, numberOfQuestions, flashcards]);
 
-  // Handler for category change
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
   };
 
-  // Handler for number of questions change
   const handleNumberOfQuestionsChange = (e) => {
     setNumberOfQuestions(parseInt(e.target.value, 10));
   };
 
-  // Handler for form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Only navigate if a category has been selected
+ 
     if (category) {
       navigate('/flashcards', { state: { category, numberOfQuestions } });
     } else {
-      // Alert the user to choose a category if they have not
+   
       alert('Please choose a category.');
     }
   };
@@ -83,8 +78,10 @@ export default function FlashcardContainer({ flashcards }) {
             onFlip={() => setFlippedStates({ ...flippedStates, [flashcard.id]: !flippedStates[flashcard.id] })}
           />
         ))}
-        <Link to="/" className="button go-back-button" aria-label="Return to home">Exit</Link>
-        <img src={BrainImage} alt="Brain" className="brain-img" />
+        <div className="exit-and-brain-container">
+          <Link to="/" className="button go-back-button" aria-label="Return to home">Exit</Link>
+          <img src={BrainImage} alt="Brain" className="brain-img" />
+        </div>
       </div>
     </div>
   );
