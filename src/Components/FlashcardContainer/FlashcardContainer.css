@@ -114,6 +114,8 @@ img.brain-img {
 .category-form button.update-button {
   flex: 0;
   background-color: #e50914;
+  background-color: #11f506;
+  background-color: #04a9ff;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -127,6 +129,8 @@ img.brain-img {
 
 .category-form button.update-button:hover {
   background-color: #f40612;
+  /* background-color: #11f506; */
+  /* background-color: #04a9ff; */
 }
 
 
