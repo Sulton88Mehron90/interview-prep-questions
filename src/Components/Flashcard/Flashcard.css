@@ -2,22 +2,21 @@
   cursor: pointer;
   perspective: 1000px;
   width: 300px;
-  /* margin: auto; */
+  margin: auto;
   margin-top: 2rem;
-  background-color: var(--secondary-color);
   color: var(--text-color);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
   min-height: 200px;
-  /* padding: 0.5rem; */
+  /* box-shadow: 0 4px 8px whitesmoke; */
 }
 
 .card:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-inner {
@@ -27,7 +26,7 @@
   transition: transform 0.6s;
   transform-style: preserve-3d;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transform-origin: center;
   height: 100%;
 }
@@ -49,11 +48,18 @@
   border-radius: 10px;
   word-wrap: break-word;
   line-height: 1.4;
-  word-spacing: 0px; 
-  text-align: left; 
+  word-spacing: 0px;
+  text-align: left;
   transition: box-shadow 0.3s ease-in-out;
   height: 100%;
   backface-visibility: hidden;
+}
+
+.correct-answer-emoji {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2rem;
 }
 
 .card-content {
@@ -65,18 +71,25 @@
   word-wrap: break-word;
   font-size: 0.9em;
   line-height: 1.4;
-  word-spacing: 0px; 
+  word-spacing: 0px;
 }
 
 .front {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+  /* background-color:black; */
+  background-color: white;
+  /* color: white; */
+  color: black;
+  box-shadow: inset 0 0 5px black;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .back {
-  background-color:#4c4d4f;
-  color: var(--text-color);
+  /* background-color:#4c4d4f; */
+  background-color: white;
+  /* color: var(--text-color); */
+  color: black;
   transform: rotateY(180deg);
   box-shadow: inset 0 0 5px #e1e3e3;
+  /* box-shadow: inset 0 0 5px rgba(0,0,0,0.3);  */
+  box-shadow: 0 4px 8px whitesmoke;
 }

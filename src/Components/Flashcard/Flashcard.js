@@ -35,6 +35,9 @@ export default function Flashcard({ flashcard, flipped, onFlip }) {
           {flashcard.question}
         </div>
         <div className="back card-content" ref={backEl}>
+          {flipped && (
+            <span className="correct-answer-emoji" role="img" aria-label="Correct Answer">🌱</span>
+          )}
           {flashcard.answer}
         </div>
       </div>
@@ -50,7 +53,6 @@ Flashcard.propTypes = {
   flipped: PropTypes.bool, 
   onFlip: PropTypes.func, 
 };
-
 
 Flashcard.defaultProps = {
   flipped: false,

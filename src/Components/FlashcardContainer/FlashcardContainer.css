@@ -5,10 +5,6 @@ body {
 
 .container {
   padding: 2rem;
-  /* background-color: #fff;  */
-  color: #141414;
-  background-color: #141414;
-  /* color: #ffffff;  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +12,6 @@ body {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
   margin-bottom: 20px;
   max-width: 900px;
-  /* margin: auto; */
   margin: 1rem 2rem;
   padding: 2rem;
 }
@@ -38,7 +33,7 @@ body {
 .category-form button {
   margin: 0.9rem;
   flex: 2;
-  color: #777;
+  color: black;
   font-size: 0.9rem;
 }
 
@@ -69,7 +64,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   grid-template-rows: auto 1fr;
-  /* box-shadow: #e1e3e3; */
 }
 
 .category-form {
@@ -145,11 +139,9 @@ img.brain-img {
   /* background-color: #04a9ff; */
 }
 
-
-
 /* Spinner */
 
-.loading {
+/* .loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +156,7 @@ img.brain-img {
   border-radius: 50%;
   border-left-color: #E50914;
   animation: spin 1s linear infinite;
-}
+} */
 
 @keyframes spin {
   0% {
@@ -178,21 +170,6 @@ img.brain-img {
 
 /* Media Queries for Responsiveness */
 
-@media only screen and (max-width: 768px) {
-
-  .exit-and-brain-container {
-    flex-direction: column;
-  }
-  .container {
-    padding: 0 1rem;
-  }
-
-  .card {
-    min-width: 150px;
-    padding: 1rem;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   .container {
     padding: 0;
@@ -202,6 +179,7 @@ img.brain-img {
     min-width: 100px;
     padding: 0.5rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -225,18 +203,8 @@ img.brain-img {
 
   .card {
     min-width: 150px;
+    padding: 1rem;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  .container {
-    padding: 0;
-  }
-
-  .card {
-    min-width: 100px;
-  }
-
 }
 
 
