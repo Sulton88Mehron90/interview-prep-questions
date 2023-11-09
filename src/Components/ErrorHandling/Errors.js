@@ -49,7 +49,11 @@ Errors.propTypes = {
     message: PropTypes.string,
     statusCode: PropTypes.number,
   }),
-  setTriviaLoading: PropTypes.func.isRequired,
+  setTriviaLoading: PropTypes.func,
+};
+
+Errors.defaultProps = {
+  setTriviaLoading: () => {},
 };
 
 export default Errors;

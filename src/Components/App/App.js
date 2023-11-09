@@ -20,21 +20,29 @@ export default function App() {
 
   const allQuestions = [...feQuestions, ...behavioralInterviewQuestions, ...beQuestions];
 
+  const simulateServerError = (errorCode) => {
+    setError({ message: `Error ${errorCode}`, statusCode: errorCode });
+    setTriviaLoading(false);
+  };
+
   return (
     <div>
-      <Routes>
+       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
-        <Route 
-          path="/error" 
+        <Route path="/nonsense" element={<Error404 />} />
+        <Route path="/500-test" element={<Error500 />} />
+        <Route path="/general-error" element={<Errors error={error} />} />
+        <Route
+          path="/error"
           element={
-            <Errors 
-              error={error} 
-              setError={setError} 
+            <Errors
+              error={error}
+              setError={setError}
               setTriviaLoading={setTriviaLoading}
             />
-          } 
+          }
         />
         <Route
           path="/flashcards"
@@ -44,7 +52,8 @@ export default function App() {
             />
           }
         />
-        <Route path="*" element={<Navigate to="/404" />} />
+        {/* <Route path="*" element={<Navigate to="/404" />} /> */}
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   );

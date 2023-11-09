@@ -1,5 +1,5 @@
 .error-msg {
-  /* background-image: url('../../Images/parchment-paper.png'); */
+  background-image: url('../../Images/parchment-paper.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #5a3822;
@@ -16,8 +16,8 @@
 }
 
 .error-msg h1 {
-  font-size: 3em;
-  margin-bottom: 1em;
+  font-size: 2em;
+  /* margin-bottom: 1em; */
   text-align: center;
   border-bottom: 3px solid #d2a45b; 
   padding-bottom: 0.5em;
@@ -33,7 +33,7 @@
 }
 
 .error-msg img {
-  width: 80%;
+  width: 40%;
   margin: 2% auto;
   max-width: 50rem;
   margin-top: 1rem;

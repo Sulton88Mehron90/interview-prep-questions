@@ -111,7 +111,7 @@ img.brain-img {
 
 /* Spinner */
 
-/* .loading {
+.loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,8 +126,8 @@ img.brain-img {
   border-radius: 50%;
   border-left-color: #E50914;
   animation: spin 1s linear infinite;
-} */
-/* 
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -136,7 +136,7 @@ img.brain-img {
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 /* Media Queries for Responsiveness */
 
