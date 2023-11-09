@@ -62,6 +62,7 @@ export default function FlashcardContainer({ flashcards }) {
 
   return (
     <div className='container' role="main">
+        <div className='card-grid' aria-live="polite"></div>
       <form onSubmit={handleSubmit} className="category-form">
         <label htmlFor="category-select">Category:</label>
         <select id="category-select" value={category} onChange={handleCategoryChange} required>

@@ -78,9 +78,10 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: -3rem;
 }
 
-button go-back-button {
+/* button go-back-button {
   text-decoration: none;
   background-color: #e50914;
   color: white;
@@ -97,13 +98,23 @@ button go-back-button {
 
 .go-back-button:hover {
   background-color: #f40612;
-}
+} */
 
 .exit-and-brain-container {
   display: flex;
-  justify-content: center;
+  width: 30%;
+  flex-direction: column; 
+  justify-content: flex-start;
   align-items: center;
   gap: 70px; 
+  position: fixed;
+  bottom: 14rem; 
+  left:69rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
 }
 
 img.brain-img {
