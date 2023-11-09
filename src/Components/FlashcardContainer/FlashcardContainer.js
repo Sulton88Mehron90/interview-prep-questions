@@ -26,9 +26,9 @@ export default function FlashcardContainer({ flashcards }) {
   const location = useLocation();
 
   const [category, setCategory] = useState(location.state?.category || 'all');
-  const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 3);
-  const [filteredFlashcards, setFilteredFlashcards] = useState([]);
 
+  const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 1);
+  const [filteredFlashcards, setFilteredFlashcards] = useState([]);
   const [flippedStates, setFlippedStates] = useState({});
 
   useEffect(() => {
@@ -51,9 +51,14 @@ export default function FlashcardContainer({ flashcards }) {
   };
 
   const handleNumberOfQuestionsChange = (e) => {
-    setNumberOfQuestions(parseInt(e.target.value, 10));
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value) && value >= 1) {
+      setNumberOfQuestions(value);
+    } else if (e.target.value === "") {
+      setNumberOfQuestions(1);
+    }
   };
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -62,6 +67,7 @@ export default function FlashcardContainer({ flashcards }) {
 
   return (
     <div className='container' role="main">
+        <div className='card-grid' aria-live="polite"></div>
       <form onSubmit={handleSubmit} className="category-form">
         <label htmlFor="category-select">Category:</label>
         <select id="category-select" value={category} onChange={handleCategoryChange} required>
@@ -79,6 +85,7 @@ export default function FlashcardContainer({ flashcards }) {
           onChange={handleNumberOfQuestionsChange}
           min="1"
           max="154"
+          required
         />
         <button type="submit" className="update-button">Update</button>
       </form>

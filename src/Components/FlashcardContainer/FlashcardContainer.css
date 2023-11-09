@@ -1,6 +1,7 @@
 body {
   background-color: #C8D0D2;
   margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -11,16 +12,12 @@ body {
   flex-wrap: wrap;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
   margin-bottom: 20px;
-  max-width: 900px;
-  margin: 1rem 2rem;
-  padding: 2rem;
+  margin: 1rem auto;
+  width: 90%;
 }
 
 .header {
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: white;
   padding: 0 1.5rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
@@ -32,22 +29,18 @@ body {
 .category-form input,
 .category-form button {
   margin: 0.9rem;
-  flex: 2;
   color: black;
   font-size: 0.9rem;
 }
 
 .category-form label {
-  flex: 2;
   color: #777;
   font-size: 1.1rem;
 }
 
-
 .category-form label,
 .category-form select,
 .category-form input {
-  flex: 1;
   margin: 0.9rem;
 }
 
@@ -57,71 +50,45 @@ body {
 }
 
 .card-grid {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  grid-template-rows: auto 1fr;
 }
 
 .category-form {
-  width: 100%;
-  max-width: 700px;
-  margin: 1rem auto;
   background-color: #f8f8f8;
-  padding: 0.2rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .2);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-button go-back-button {
-  text-decoration: none;
-  background-color: #e50914;
-  color: white;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-  margin-top: 2rem;
-  justify-self: center;
-  grid-column: 1 / -1;
-}
-
-.go-back-button:hover {
-  background-color: #f40612;
+  margin-top: -3rem;
+  width: 90%;
+  margin: 1rem auto;
 }
 
 .exit-and-brain-container {
-  display: flex;
+  width: auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 70px; 
-}
+  gap: 20px;
+  position: relative;
+  margin-top: 1rem;
+} 
 
 img.brain-img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 8px whitesmoke;
-  justify-self: center;
-  grid-column: 1 / -1;
   margin-top: 2rem;
 }
 
 .category-form button.update-button {
-  flex: 0;
   background-color: #e50914;
-  background-color: #11f506;
-  background-color: #04a9ff;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -129,14 +96,11 @@ img.brain-img {
   margin-top: 1rem;
   cursor: pointer;
   font-size: 1rem;
-  flex: 0 0 auto;
   margin-left: 0.5rem;
 }
 
 .category-form button.update-button:hover {
   background-color: #f40612;
-  /* background-color: #11f506; */
-  /* background-color: #04a9ff; */
 }
 
 /* Spinner */
@@ -157,7 +121,7 @@ img.brain-img {
   border-left-color: #E50914;
   animation: spin 1s linear infinite;
 } */
-
+/* 
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -166,24 +130,9 @@ img.brain-img {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Media Queries for Responsiveness */
-
-@media only screen and (max-width: 480px) {
-  .category-form {
-    margin: 1rem;
-  }
-  .container {
-    padding: 0;
-  }
-
-  .card {
-    min-width: 100px;
-    padding: 0.5rem;
-  }
-
-}
 
 @media only screen and (max-width: 768px) {
   .category-form {
@@ -195,15 +144,41 @@ img.brain-img {
   .category-form select,
   .category-form input,
   .category-form button {
-    width: auto; 
+    width: auto;
     margin: 0.5rem;
-    flex: none; 
+    flex: none;
+  }
+
+  .header,
+  .container,
+  .exit-and-brain-container {
+    padding: 1rem;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  img.brain-img {
+    width: 100px;
+    height: 100px;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .container,
+  .category-form {
+    width: 95%;
+    padding: 0.5rem;
+  }
 
-:root {
-  --primary-color: #e50914;
-  --secondary-color: #141414;
-  --text-color: #ffffff;
+  .card {
+    min-width: 100px;
+    padding: 0.5rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
