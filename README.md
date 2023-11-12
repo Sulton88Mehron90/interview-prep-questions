@@ -1,7 +1,7 @@
 ## MOD4 Interview Prep Questions 
 
 <div style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/chess2.png" 
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/circular_chess3.png"
          alt="Interview Prep Logo" 
          style="border-radius: 50%; width: 105px; height: auto; margin-right: 10px;">
     <div>
@@ -12,7 +12,7 @@
 </div>
 
 ### Introduction
-The Interview Prep Questions App is a dynamic tool designed to assist job seekers, particularly in software development, in preparing for technical and behavioral interviews. It was inspired by the preparation for an interview simulation with an instructor and built in 7 hours throughout the day. This user-friendly app offers a range of questions and answers, presented in an interactive flashcard format, making your interview preparation engaging and effective.
+The Interview Prep Questions App is a dynamic tool designed to assist job seekers, particularly in software development, in preparing for technical and behavioral interviews. It was inspired while getting ready for an interview simulation with an instructor, and built in 7 hours throughout the day. This user-friendly app offers a range of questions and answers, presented in an interactive flashcard format, making your interview preparation engaging and effective.
 
 For a comprehensive guide to preparing for your interviews, make sure to go through the Turing [Full Interview Simulation Guidelines](https://mod4.turing.edu/lessons/full-interview-simulation.html).
 
@@ -61,6 +61,7 @@ Contributions are what make the open-source community such great place to learn,
 ### Acknowledgements
 - Special thanks to Turing School for the learning journey.
 - Gratitude to the instructors and peers who contributed to the learning experience.
+
 <img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/d07cdccf-01dc-4aad-ab97-143def51d789"> 
 
  ### Developer
@@ -78,3 +79,45 @@ Contributions are what make the open-source community such great place to learn,
 </table>
 
 <img width="504" alt="image" src="https://github.com/Sulton88Mehron90/showcase-project/assets/119267809/d07cdccf-01dc-4aad-ab97-143def51d789"> 
+
+
+
+<!-- 
+<h1 style="color:blue; display: inline;">
+    2305 - You Can Do It!
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/chess2.png" 
+         alt="happy chick" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;
+        width: 105px; height: auto; margin-right: 10px;" />
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/brain2.png" 
+         alt="skeptical chick" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;
+        width: 105px; height: auto; margin-right: 10px;" />
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/brain23T.png" 
+         alt="know it all chick" 
+         style="vertical-align: middle; display: inline; border-radius: 50%; border: 2px solid light gray;
+         width: 105px; height: auto; margin-right: 10px;" />
+</h1>
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/chess2.png"
+         alt="Interview Prep Logo" 
+         style="border-radius: 50%; width: 105px; height: auto;border: 2px solid light gray margin-right: 10px;">
+    <div>
+        <span style="font-size: 16px;">Experience the app in action: 
+            <a href="https://interview-prep-questions.vercel.app/" target="_blank">Let's Practice</a>
+        </span>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/brain23T.png"
+         alt="Interview Prep" 
+         style="border-radius: 50%; width: 105px; height: auto; margin-right: 10px;">
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/brain2.png"
+         alt="Interview" 
+         style="border-radius: 50%; width: 105px; height: auto; margin-right: 10px;">
+</div> -->
