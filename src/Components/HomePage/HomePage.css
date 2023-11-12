@@ -1,8 +1,7 @@
 :root {
-  --primary-color: #e50914; 
-  --secondary-color: #221f1f;
-  --background-color: #141414; 
-  --text-color: #fff; 
+  --primary-color: #e50914;
+  --background-color: #141414;
+  --text-color: #fff;
   --font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -13,7 +12,7 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background: var(--background-color); 
+  background: var(--background-color);
   color: var(--text-color);
 }
 
@@ -22,29 +21,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.1rem; 
+}
+
+.home__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 0.5rem; 
 }
 
 .home__title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  display: flex;
-  flex-direction: row; 
-  align-items: center; 
-  flex-wrap: wrap;
 }
 
 .home__image {
-  width: 50px; 
-  height: auto; 
+  width: 50px;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 3px;
-  justify-self: center;
-  grid-column: 1 / -1;
-  /* margin-bottom: 1rem; */
   box-shadow: 0 4px 8px rgb(228, 229, 216);
-  /* box-shadow: 0 4px 8px whitesmoke; */
 }
 
 .home__start-button {
@@ -61,4 +62,66 @@
 .home__start-button:hover {
   background-color: #b20710;
   transform: translateY(-3px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 2rem;
+  }
+
+  .home__start-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    gap: 1rem; 
+  }
+
+  .home__image {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__start-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    gap: 1rem; 
+  }
+
+  .home__image {
+    width: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .home__start-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    gap: 1rem; 
+  }
+
+  .home__image {
+    width: 40px;
+  }
+
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+  }
+  
+  .home__title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1rem; 
+  }
 }
