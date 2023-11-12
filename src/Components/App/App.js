@@ -1,3 +1,4 @@
+// import React, { useState, useEffect } from 'react';
 import React, { useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import FlashcardContainer from '../FlashcardContainer/FlashcardContainer';
@@ -17,43 +18,62 @@ export default function App() {
   const [error, setError] = useState(null);
   const [triviaLoading, setTriviaLoading] = useState(false);
 
-
   const allQuestions = [...feQuestions, ...behavioralInterviewQuestions, ...beQuestions];
+  
+// below is to test and see the loader/spinner
+  // useEffect(() => {
+  //   setTriviaLoading(true);
 
-  const simulateServerError = (errorCode) => {
-    setError({ message: `Error ${errorCode}`, statusCode: errorCode });
-    setTriviaLoading(false);
-  };
+  //   const timer = setTimeout(() => {
+  //     setTriviaLoading(false);
+  //   }, 3000); 
+
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div>
-       <Routes>
+    {triviaLoading && (
+      <div className="loader-container">
+        <div className="loading"></div>
+      </div>
+    )}
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/404" element={<Error404 />} />
         <Route path="/500" element={<Error500 />} />
         <Route path="/nonsense" element={<Error404 />} />
         <Route path="/500-test" element={<Error500 />} />
-        <Route path="/general-error" element={<Errors error={error} />} />
-        <Route
-          path="/error"
+        <Route 
+          path="/general-error" 
           element={
-            <Errors
-              error={error}
-              setError={setError}
+            <Errors 
+              error={error} 
+              setError={setError} 
+              setTriviaLoading={setTriviaLoading} 
+            />
+          } 
+        />
+        <Route 
+          path="/error" 
+          element={
+            <Errors 
+              error={error} 
+              setError={setError} 
               setTriviaLoading={setTriviaLoading}
             />
-          }
+          } 
         />
-        <Route
-          path="/flashcards"
+        <Route 
+          path="/flashcards" 
           element={
-            <FlashcardContainer
+            <FlashcardContainer 
               flashcards={allQuestions} 
+              setTriviaLoading={setTriviaLoading} 
             />
-          }
+          } 
         />
         <Route path="*" element={<Navigate to="/404" />} />
-        {/* <Route path="*" element={<Error404 />} /> */}
       </Routes>
     </div>
   );

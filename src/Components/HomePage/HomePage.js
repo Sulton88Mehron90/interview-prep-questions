@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Chess from '../../Images/chess.png'; // Ensure this path is correct
-import './HomePage.css'; // Ensure this path is correct
+import Chess from '../../Images/chess.png'; 
+import './HomePage.css'; 
 
 export default function HomePage() {
   return (

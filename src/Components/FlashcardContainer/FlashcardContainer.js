@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import BrainImage from '../../Images/brain2.png';
 import './FlashcardContainer.css';
 
+
 function shuffleArray(array) {
   let currentIndex = array.length, randomIndex;
 
@@ -65,6 +66,12 @@ export default function FlashcardContainer({ flashcards }) {
     navigate('/flashcards', { state: { category, numberOfQuestions } });
   };
 
+  const handleRefresh = () => {
+    navigate('/');
+    setTimeout(() => navigate('/flashcards'), 0);
+  };
+  
+
   return (
     <div className='container' role="main">
         <div className='card-grid' aria-live="polite"></div>
@@ -100,7 +107,7 @@ export default function FlashcardContainer({ flashcards }) {
         ))}
         <div className="exit-and-brain-container">
           <Link to="/" className="button go-back-button" aria-label="Return to home">Exit</Link>
-          <img src={BrainImage} alt="Brain" className="brain-img" />
+          <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
         </div>
       </div>
     </div>
