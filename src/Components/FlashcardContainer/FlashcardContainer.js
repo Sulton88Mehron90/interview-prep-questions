@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import BrainImage from '../../Images/brain2.png';
+import BrainImage from '../../Images/chess2305job.jpeg';
 import './FlashcardContainer.css';
 
 
