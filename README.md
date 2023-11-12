@@ -1,9 +1,9 @@
 ## MOD4 Interview Prep Questions 
 
 <div style="display: flex; align-items: center; justify-content: center;">
-    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/circular_chess3.png"
+    <img src="https://github.com/Sulton88Mehron90/interview-prep-questions/raw/main/src/Images/brain2.png"
          alt="Interview Prep Logo" 
-         style="border-radius: 50%; width: 105px; height: auto; margin-right: 10px;">
+         style="border-radius: 50%; width: 205px; height: auto; margin-right: 10px;">
     <div>
         <span style="font-size: 16px;">Experience the app in action: 
             <a href="https://interview-prep-questions.vercel.app/" target="_blank">Let's Practice</a>
