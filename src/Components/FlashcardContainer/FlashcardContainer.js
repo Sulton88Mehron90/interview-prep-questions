@@ -4,6 +4,7 @@ import Flashcard from '../Flashcard/Flashcard';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import BrainImage from '../../Images/chess2305job.jpeg';
+import WeCanDoit from '../../Images/2305good.jpeg';
 import './FlashcardContainer.css';
 
 function shuffleArray(array) {
@@ -70,7 +71,7 @@ export default function FlashcardContainer({ flashcards }) {
 
   const handleRefresh = () => {
     setCategory('all');
-    setNumberOfQuestions(3);
+    setNumberOfQuestions(1);
     setSearchQuery('');
     updateFilteredFlashcards();
   };
@@ -78,6 +79,9 @@ export default function FlashcardContainer({ flashcards }) {
   return (
     <div className='container' role="main">
       <form onSubmit={handleSubmit} className="category-form">
+        <div className="exit-and-brain-container">
+          <img src={WeCanDoit} alt="boxing" className="emoji" onClick={handleRefresh} />
+        </div>
         <label htmlFor="category-select">Category:</label>
         <select id="category-select" value={category} onChange={handleCategoryChange} required>
           <option value="all">All</option>
@@ -114,9 +118,7 @@ export default function FlashcardContainer({ flashcards }) {
             onFlip={() => setFlippedStates({ ...flippedStates, [flashcard.id]: !flippedStates[flashcard.id] })}
           />
         ))}
-        <div className="exit-and-brain-container">
           <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
-        </div>
       </div>
     </div>
   );
