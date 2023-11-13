@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import Flashcard from '../Flashcard/Flashcard';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -27,27 +27,28 @@ export default function FlashcardContainer({ flashcards }) {
   const [flippedStates, setFlippedStates] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
 
-  const updateFilteredFlashcards = () => {
+  const updateFilteredFlashcards = useCallback(() => {
     let filtered = flashcards;
-
+  
     if (category !== 'all') {
       filtered = flashcards.filter(card => card.category === category);
     }
-
+  
     if (searchQuery) {
       filtered = filtered.filter(
         card => card.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 card.answer.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
-
+  
     setFilteredFlashcards(shuffleArray(filtered).slice(0, numberOfQuestions));
     setFlippedStates({});
-  };
-
+  }, [category, numberOfQuestions, flashcards, searchQuery]);
+  
   useEffect(() => {
     updateFilteredFlashcards();
-  }, [category, numberOfQuestions, flashcards, searchQuery]);
+  }, [updateFilteredFlashcards]);
+  
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
@@ -73,7 +74,6 @@ export default function FlashcardContainer({ flashcards }) {
     setSearchQuery('');
     updateFilteredFlashcards();
   };
-  
 
   return (
     <div className='container' role="main">
@@ -103,6 +103,7 @@ export default function FlashcardContainer({ flashcards }) {
           onChange={handleSearchChange}
         />
         <button type="submit" className="update-button">Update</button>
+        <Link to="/" className="button go-back-button form-exit-button" aria-label="Return to home">Exit</Link>
       </form>
       <div className='card-grid' aria-live="polite">
         {filteredFlashcards.map((flashcard, index) => (
@@ -114,10 +115,10 @@ export default function FlashcardContainer({ flashcards }) {
           />
         ))}
         <div className="exit-and-brain-container">
-          <Link to="/" className="button go-back-button" aria-label="Return to home">Exit</Link>
-          <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
-        </div>
+        <Link to="/" className="button original-exit-button" aria-label="Return to home">Exit</Link>
+        <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
       </div>
+    </div>
     </div>
   );
 }
