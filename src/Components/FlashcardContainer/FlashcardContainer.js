@@ -23,7 +23,7 @@ export default function FlashcardContainer({ flashcards }) {
   const location = useLocation();
 
   const [category, setCategory] = useState(location.state?.category || 'all');
-  const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 3);
+  const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 1);
   const [filteredFlashcards, setFilteredFlashcards] = useState([]);
   const [flippedStates, setFlippedStates] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
