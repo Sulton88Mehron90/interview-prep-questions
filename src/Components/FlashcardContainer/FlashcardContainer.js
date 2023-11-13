@@ -29,26 +29,26 @@ export default function FlashcardContainer({ flashcards }) {
 
   const updateFilteredFlashcards = useCallback(() => {
     let filtered = flashcards;
-  
+
     if (category !== 'all') {
       filtered = flashcards.filter(card => card.category === category);
     }
-  
+
     if (searchQuery) {
       filtered = filtered.filter(
         card => card.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                card.answer.toLowerCase().includes(searchQuery.toLowerCase())
+          card.answer.toLowerCase().includes(searchQuery.toLowerCase())
       );
     }
-  
+
     setFilteredFlashcards(shuffleArray(filtered).slice(0, numberOfQuestions));
     setFlippedStates({});
   }, [category, numberOfQuestions, flashcards, searchQuery]);
-  
+
   useEffect(() => {
     updateFilteredFlashcards();
   }, [updateFilteredFlashcards]);
-  
+
 
   const handleCategoryChange = (e) => {
     setCategory(e.target.value);
@@ -103,7 +103,7 @@ export default function FlashcardContainer({ flashcards }) {
           onChange={handleSearchChange}
         />
         <button type="submit" className="update-button">Update</button>
-        <Link to="/" className="button go-back-button form-exit-button" aria-label="Return to home">Exit</Link>
+        <Link to="/" className="form-exit-button" aria-label="Return to home">Exit</Link>
       </form>
       <div className='card-grid' aria-live="polite">
         {filteredFlashcards.map((flashcard, index) => (
@@ -115,10 +115,9 @@ export default function FlashcardContainer({ flashcards }) {
           />
         ))}
         <div className="exit-and-brain-container">
-        <Link to="/" className="button original-exit-button" aria-label="Return to home">Exit</Link>
-        <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
+          <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
+        </div>
       </div>
-    </div>
     </div>
   );
 }

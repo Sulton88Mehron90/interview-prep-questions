@@ -25,18 +25,14 @@ body {
   font-size: 1.2rem;
 }
 
-.category-form select,
-.category-form input,
-.category-form button {
-  margin: 0.9rem;
-  color: black;
-  font-size: 0.9rem;
-}
-
 .category-form label {
+  display: inline-block;
+  width: auto; 
+  margin-right: 0.5rem; 
   color: #777;
   font-size: 1.1rem;
 }
+
 
 .category-form label,
 .category-form select,
@@ -61,12 +57,12 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .2);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: -3rem;
   width: 90%;
   margin: 1rem auto;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
 }
 
 .exit-and-brain-container {
@@ -79,11 +75,20 @@ body {
   z-index: 1000;
 }
 
-.original-exit-button {
-  position: relative;
-  z-index: 1001;
-  flex: 0;
-  background-color: #e50914;
+/* Styling for labels, selects, inputs, and buttons */
+.category-form label,
+.category-form select,
+.category-form input,
+.category-form button,
+.category-form .form-exit-button {
+  margin: 0.9rem;
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+}
+
+.category-form button.update-button, .form-exit-button {
+  background-color: #37b3fe;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -91,71 +96,70 @@ body {
   margin-top: 1rem;
   cursor: pointer;
   font-size: 1rem;
-  flex: 0 0 auto;
   margin-left: 0.5rem;
-  text-decoration: none;
-  text-align: center;
-  width: 5rem;
-  transition: background-color 0.2s, transform 0.1s;
-  bottom: 10rem;
-  right: 3rem;
-  margin-bottom: 6rem;
 }
 
-img.brain-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px whitesmoke;
-  z-index: 1002;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  display: block;
-  top: 50%;
-  left: 50%;
-}
-
-img.brain-img:hover {
-  box-shadow: 0 8px 16px whitesmoke;
-  border: 2px solid #37b3fe;
-}
-
-.exit-and-brain-container {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  bottom: 33%;
-  z-index: 1000;
-}
-
-.original-exit-button {
-  position: relative; 
-  z-index: 1001;
-  flex: 0;
+.form-exit-button {
   background-color: #e50914;
   background-color: #11f506;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
-  margin-top: 1rem;
   cursor: pointer;
   font-size: 1rem;
   flex: 0 0 auto;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.1s;
+  display: block;
+  line-height: normal;
+}
+
+.category-form .form-exit-button:hover {
+  background-color: #04a9ff;
+}
+
+.category-form select,
+.category-form input,
+.category-form button
+.form-exit-button {
+  margin: 0.9rem;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.category-form button.update-button, 
+.category-form .form-exit-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
   margin-left: 0.5rem;
   text-decoration: none;
   text-align: center;
   width: 5rem;
   transition: background-color 0.2s, transform 0.1s;
-  bottom: 10rem;
-  right: 3rem;
-  margin-bottom: 6rem;
-  margin-left: 0.5rem;
+}
+
+.category-form button.update-button {
+  background-color: #37b3fe; 
+}
+
+.category-form button.update-button:hover {
+  background-color: #f40612; 
+}
+
+.exit-and-brain-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  bottom: 33%;
+  z-index: 1000;
 }
 
 img.brain-img {
@@ -177,26 +181,6 @@ img.brain-img {
 img.brain-img:hover {
   box-shadow: 0 8px 16px whitesmoke; 
   border: 2px solid #37b3fe;
-}
-
-.category-form button.update-button {
-  background-color: #37b3fe;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-left: 0.5rem;
-}
-
-.category-form button.update-button:hover {
-  background-color: #f40612;
-}
-
-.form-exit-button {
-  display: none;
 }
 
 /* Media Queries for Responsiveness */
@@ -243,10 +227,6 @@ img.brain-img:hover {
     height: 100px;
     margin-bottom: 1rem;
   }
-
-  /* .original-exit-button {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -276,10 +256,6 @@ img.brain-img:hover {
 
   img.brain-img {
     display: none!important;
-  }
-
-  .form-exit-button {
-    display: block;
   }
 
   .original-exit-button {
