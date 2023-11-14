@@ -180,7 +180,7 @@ body {
 }
 
 .image-container {
-  width: 300px;
+  /* width: 300px; */
   display: flex;
   flex-direction:row;
   align-items: center; 
@@ -207,8 +207,9 @@ img.brain-img:hover {
 }
 
 .go-for-it-gif {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: auto; 
+  max-width: 300%; 
   object-fit: cover;
   margin-left: 7rem;
   cursor: pointer;
@@ -218,6 +219,8 @@ img.brain-img:hover {
   transform: translate(-50%, -50%);
   display: none;
   display: block;
+  margin-left: 4  rem;
+  /* margin-top: 1rem; */
 }
 
 .special-image {
@@ -237,7 +240,7 @@ img.brain-img:hover {
 .special-image,
 .go-for-it-gif:hover {
   box-shadow: 0 8px 16px whitesmoke;
-  /* border: 2px solid #37b3fe; */
+  border: 2px solid #eff7f0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -254,14 +257,14 @@ img.brain-img:hover {
   }
 
   img.brain-img {
-    margin-top: 9rem;
-    margin-left: 2rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
   }
 
   .special-image,
   .go-for-it-gif:hover {
-    margin-top: -12rem;
-    margin-left: 35rem;
+    margin-top: 0rem;
+    margin-left: 1rem;
   }
 }
 
@@ -315,8 +318,8 @@ img.brain-img:hover {
 
   .special-image,
   .go-for-it-gif:hover {
-    margin-top: -9rem;
-    margin-left: 9rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
   }
 
   .emoji {
@@ -368,6 +371,10 @@ img.brain-img:hover {
 
 @media only screen and (max-width: 412px) {
 
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
   .emoji,
   img.brain-img, .special-image,
   .go-for-it-gif:hover {
@@ -386,8 +393,10 @@ img.brain-img:hover {
   }
 }
 
-
 @media only screen and (max-width: 320px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 
   .emoji,
   img.brain-img, .special-image,
