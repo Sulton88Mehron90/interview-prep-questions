@@ -21,7 +21,6 @@ function shuffleArray(array) {
 export default function FlashcardContainer({ flashcards }) {
   const navigate = useNavigate();
   const location = useLocation();
-
   const [category, setCategory] = useState(location.state?.category || 'all');
   const [numberOfQuestions, setNumberOfQuestions] = useState(location.state?.numberOfQuestions || 1);
   const [filteredFlashcards, setFilteredFlashcards] = useState([]);
@@ -57,7 +56,7 @@ export default function FlashcardContainer({ flashcards }) {
 
   const handleNumberOfQuestionsChange = (e) => {
     const value = parseInt(e.target.value, 10);
-    setNumberOfQuestions(isNaN(value) ? 1 : value);
+    setNumberOfQuestions(isNaN(value) || value < 1 ? 1 : value);
   };
 
   const handleSearchChange = (e) => {
