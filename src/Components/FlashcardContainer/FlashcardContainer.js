@@ -4,7 +4,7 @@ import Flashcard from '../Flashcard/Flashcard';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import BrainImage from '../../Images/chess2305job.jpeg';
-import WeCanDoit from '../../Images/2305good.jpeg';
+import WeCanDoit from '../../Images/2305Turing.jpeg';
 import GoForItGif from '../../Images/go-for-it-you-can-do-it.gif';
 import YouCanDoIt from '../../Images/2305C.jpeg';
 import './FlashcardContainer.css';
@@ -126,11 +126,15 @@ export default function FlashcardContainer({ flashcards }) {
           />
         ))}
         <div className='image-container'>
-          <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
           {showGif ? (
-            <img src={GoForItGif} alt="Go For It" className="go-for-it-gif" onClick={toggleGif} />
+            <>
+              <img src={GoForItGif} alt="Go For It" className="go-for-it-gif" onClick={toggleGif} />
+            </>
           ) : (
-            <img src={YouCanDoIt} alt="Special Image" className="special-image" onClick={toggleGif} />
+            <>
+              <img src={BrainImage} alt="Brain" className="brain-img" onClick={handleRefresh} />
+              <img src={YouCanDoIt} alt="Special Image" className="special-image" onClick={toggleGif} />
+            </>
           )}
         </div>
       </div>
