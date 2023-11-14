@@ -219,8 +219,7 @@ img.brain-img:hover {
   transform: translate(-50%, -50%);
   display: none;
   display: block;
-  margin-left: 4  rem;
-  /* margin-top: 1rem; */
+  margin-left: 4rem;
 }
 
 .special-image {
@@ -233,8 +232,6 @@ img.brain-img:hover {
   cursor: pointer;
   transform: translate(-50%, -50%);
   display: block;
-  /* margin-top: 9rem;
-  margin-left: 9rem; */
 }
 
 .special-image,
