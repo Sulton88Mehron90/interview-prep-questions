@@ -69,7 +69,8 @@ export default function FlashcardContainer({ flashcards }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/flashcards', { state: { category, numberOfQuestions } });
+    // navigate('/flashcards', { state: { category, numberOfQuestions } });
+    updateFilteredFlashcards(); 
   };
 
   const handleRefresh = () => {
