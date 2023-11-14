@@ -325,6 +325,11 @@ img.brain-img:hover {
 }
 
 @media only screen and (max-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    padding: 0.25rem; 
+    overflow-x: auto;
+  }
 
   .emoji,
   img.brain-img, .special-image,
@@ -351,6 +356,11 @@ img.brain-img:hover {
 }
 
 @media only screen and (max-width: 480px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    padding: 0.25rem; 
+    overflow-x: auto;
+  }
 
   .emoji,
   img.brain-img, .special-image,
@@ -366,10 +376,43 @@ img.brain-img:hover {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    padding: 0.25rem; 
+    overflow-x: auto;
+  }
+
+  .emoji,
+  img.brain-img, .special-image,
+  .go-for-it-gif:hover {
+    width: 30px;
+    height: 30px;
+  }
+
+  .emoji {
+    margin-left: 1rem;
+  }
+
+  img.brain-img
+  {
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+
+  .special-image,
+  .go-for-it-gif:hover {
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+}
+
 @media only screen and (max-width: 412px) {
 
   .card-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding: 0.25rem; 
+    overflow-x: auto;
   }
 
   .emoji,
@@ -392,7 +435,9 @@ img.brain-img:hover {
 
 @media only screen and (max-width: 320px) {
   .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding: 0.25rem; 
+    overflow-x: auto;
   }
 
   .emoji,
@@ -413,7 +458,42 @@ img.brain-img:hover {
   }
 }
 
+@media only screen and (max-width: 390px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    padding: 0.25rem; 
+    overflow-x: auto;
+  }
+
+  .emoji,
+  img.brain-img, .special-image,
+  .go-for-it-gif:hover {
+    width: 50px;
+    height: 50px;
+  }
+
+  .emoji {
+    margin-left: 1rem;
+  }
+
+  img.brain-img
+  {
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+
+  .special-image,
+  .go-for-it-gif:hover {
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+}
+
 @media only screen and (max-width: 280px) {
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    overflow-x: auto;
+  }
 
   .emoji,
   img.brain-img, .special-image,
